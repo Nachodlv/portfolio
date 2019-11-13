@@ -1,33 +1,18 @@
 #about-me-section {
-  display: flex;
-  padding: 0 15px 10px 10px;
-
-  .card {
+  #image-container {
     display: flex;
-    flex-direction: inherit;
-    width: 100% !important;
-    padding: 16px;
-    background-color: #ffffffb3;
-    .card-title {
-      font-weight: bold;
-    }
+
     #profile-image {
       height: 200px;
     }
-    #web-images {
-      img {
-        height: auto;
-        width: 100px;
-        -webkit-filter: grayscale(30%);
-        filter: grayscale(30%);
-      }
-    }
   }
-}
 
-
-::ng-deep {
-  .nav-pills .nav-link.active {
-    background-color: #4473a8;
+  #web-images {
+    img {
+      height: auto;
+      width: 100px;
+      -webkit-filter: grayscale(30%);
+      filter: grayscale(30%);
+    }
   }
 }

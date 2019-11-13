@@ -6,3 +6,10 @@
     font-family: Ubuntu, serif;
   }
 }
+
+
+::ng-deep {
+  .nav-pills .nav-link.active {
+    background-color: #4473a8;
+  }
+}
