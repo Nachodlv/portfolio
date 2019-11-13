@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url(assets/font/Ubuntu/Ubuntu-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: Ubuntu Bold;
+  src: url(assets/font/Ubuntu/Ubuntu-Bold.ttf) format("opentype");
+}
