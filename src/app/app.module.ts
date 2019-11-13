@@ -4,19 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import {ButtonsModule} from 'ngx-bootstrap';
+import {ButtonsModule, PopoverModule} from 'ngx-bootstrap';
 import { AboutMeComponent } from './sections/about-me/about-me.component';
+import { SectionsComponent } from './sections/sections.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    SectionsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonsModule.forRoot()
+    ButtonsModule.forRoot(),
+    PopoverModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
