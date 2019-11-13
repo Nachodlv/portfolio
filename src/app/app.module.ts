@@ -7,13 +7,17 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import {ButtonsModule, PopoverModule} from 'ngx-bootstrap';
 import { AboutMeComponent } from './sections/about-me/about-me.component';
 import { SectionsComponent } from './sections/sections.component';
+import { WorkingExperiencesComponent } from './sections/working-experiences/working-experiences.component';
+import { WorkExperienceComponent } from './sections/working-experiences/work-experience/work-experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     AboutMeComponent,
-    SectionsComponent
+    SectionsComponent,
+    WorkingExperiencesComponent,
+    WorkExperienceComponent
   ],
   imports: [
     BrowserModule,
