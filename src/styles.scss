@@ -10,3 +10,12 @@ a {
   --secondary-background-color: #ffffffb3;
   --text-color: #2d2d2d;
 }
+
+.modal-lg {
+  @media (min-width: 992px){
+    max-width: 1000px;
+  }
+  @media (min-width: 1200px){
+    max-width: 1200px;
+  }
+}

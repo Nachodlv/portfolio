@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Project} from './project/project';
-import {Technologies} from './technology/technologies';
+import {Component, OnInit} from '@angular/core';
+import {Project, projectNawaiam} from './models/project';
 
 @Component({
   selector: 'app-projects',
@@ -11,15 +10,12 @@ export class ProjectsComponent implements OnInit {
 
   public projects: Project[];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
     this.projects = [
-      new Project('Nawaiam', 'assets/images/projects/nawaiam/nawaiam2.jpeg', [Technologies.Unity, Technologies.CSharp]),
-      new Project('Nawaiam', 'assets/images/projects/nawaiam/nawaiam2.jpeg', [Technologies.Unity, Technologies.CSharp]),
-      new Project('Nawaiam', 'assets/images/projects/nawaiam/nawaiam2.jpeg', [Technologies.Unity, Technologies.CSharp]),
-      new Project('Nawaiam', 'assets/images/projects/nawaiam/nawaiam2.jpeg', [Technologies.Unity, Technologies.CSharp]),
-      new Project('Nawaiam', 'assets/images/projects/nawaiam/nawaiam2.jpeg', [Technologies.Unity, Technologies.CSharp]),
+      projectNawaiam
     ];
   }
 
