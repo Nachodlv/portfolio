@@ -1,10 +1,8 @@
 #body-app {
-  background-color: #a7bcc3;
+  background-color: var(--background-color);
   padding-top: 10px;
   app-sidebar {
     display: flex;
     padding: unset;
   }
-
-
 }

@@ -1,0 +1,9 @@
+<div id="project">
+  <div class="row">
+    <h3 class="col-auto title">{{project.title}}</h3>
+    <div class="col-auto technology-icon" *ngFor="let technology of project.technologies">
+      <app-technology [technology]="technology"></app-technology>
+    </div>
+  </div>
+  <div><img [src]="project.image" alt="Image not found"></div>
+</div>

@@ -9,6 +9,9 @@ import { AboutMeComponent } from './sections/about-me/about-me.component';
 import { SectionsComponent } from './sections/sections.component';
 import { WorkingExperiencesComponent } from './sections/working-experiences/working-experiences.component';
 import { WorkExperienceComponent } from './sections/working-experiences/work-experience/work-experience.component';
+import { ProjectsComponent } from './sections/projects/projects.component';
+import { ProjectComponent } from './sections/projects/project/project.component';
+import { TechnologyComponent } from './sections/projects/technology/technology.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { WorkExperienceComponent } from './sections/working-experiences/work-exp
     AboutMeComponent,
     SectionsComponent,
     WorkingExperiencesComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    ProjectsComponent,
+    ProjectComponent,
+    TechnologyComponent
   ],
   imports: [
     BrowserModule,

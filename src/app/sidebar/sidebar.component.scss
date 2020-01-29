@@ -1,5 +1,5 @@
 #side-bar-container {
-  background-color: #ffffffb3;;
+  background-color: var(--secondary-background-color);
   padding: 30px;
   position: fixed;
   p {
@@ -10,6 +10,6 @@
 
 ::ng-deep {
   .nav-pills .nav-link.active {
-    background-color: #4473a8;
+    background-color: var(--secondary-color);
   }
 }

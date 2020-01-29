@@ -1,0 +1,25 @@
+#project {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  .title {
+    padding: 0;
+  }
+  .technology-icon {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+  .row {
+    margin: 0;
+  }
+}
+
+#project:hover {
+  background-color: var(--background-color);
+
+  .title {
+    color: white;
+  }
+}
