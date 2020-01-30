@@ -31,7 +31,11 @@ const projectNawaiam = new Project('Nawaiam',
     'composer.',
     'The game consists on making decisions and base on those decisions it runs an algorithm to determine the personality of the user. ' +
     'The objective of the game is that companies could use it to make interviews more effective.'
-  ],
+  ], {
+    startDate: new Date(2019, 1),
+    finishDate: new Date(2019, 8),
+    timeItTook: {years: 0, months: 8}
+  },
   [
     'I developed this game with Unity and C# from scratch to finish.',
     'I worked with the Facebook API for Unity, with the OAuth of Linkedin and with an external back-end that was connected to a database.',

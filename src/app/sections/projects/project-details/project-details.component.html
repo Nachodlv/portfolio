@@ -47,6 +47,10 @@
           <app-technology [technology]="technology"></app-technology>
         </div>
       </div>
+      <div>
+        <h6>Duration: {{project.time.startDate | date: "dd/MM/yyyy"}}
+          - {{project.time.finishDate | date: "dd/MM/yyyy" | customDate}} ({{project.time.timeItTook | duration}})</h6>
+      </div>
       <h5>Links:</h5>
       <ul>
         <li *ngFor="let link of project.links">{{link.name}}: <a [href]="link.link" target="_blank">{{link.link}}</a>

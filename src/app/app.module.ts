@@ -13,6 +13,8 @@ import { ProjectsComponent } from './sections/projects/projects.component';
 import { ProjectComponent } from './sections/projects/project/project.component';
 import { TechnologyComponent } from './sections/projects/technology/technology.component';
 import { ProjectDetailsComponent } from './sections/projects/project-details/project-details.component';
+import {DurationPipe} from './pipes/duration-pipe';
+import {CustomDatePipe} from './pipes/custom-date-pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ProjectDetailsComponent } from './sections/projects/project-details/pro
     ProjectsComponent,
     ProjectComponent,
     TechnologyComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    DurationPipe,
+    CustomDatePipe
   ],
   imports: [
     BrowserModule,

@@ -17,7 +17,11 @@ const projectSunbox = new Project('Sunbox',
     'project at the Austral University',
     'In the simulation is possible to change the mass, radius and speed of the planets. Planets can be added and deleted',
     'The code can be found at my GitHub account, nachodlv.'
-  ], undefined,
+  ], {
+    startDate: new Date(2017, 6),
+    finishDate: new Date(2017, 10),
+    timeItTook: {years: 0, months: 5}
+  }, undefined,
   [
     'I learned how to work in a small team and to program in Javascript and WebGL.'
   ], [
