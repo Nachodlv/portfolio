@@ -1,0 +1,12 @@
+<div id="pdf-modal">
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{pdf.title}}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body row">
+    <ngx-extended-pdf-viewer class="pdf-viewer" [src]="pdf.source" useBrowserLocale="true"
+                             height="80vh"></ngx-extended-pdf-viewer>
+  </div>
+</div>

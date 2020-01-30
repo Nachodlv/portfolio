@@ -1,4 +1,3 @@
-import {ɵDomSanitizerImpl} from '@angular/platform-browser';
 
 export class ProjectMedia {
   public source: string;
@@ -16,4 +15,5 @@ export class ProjectMedia {
 export enum ProjectMediaType {
   VIDEO,
   IMAGE,
+  PDF
 }

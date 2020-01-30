@@ -1,0 +1,31 @@
+<carousel [interval]='0' id="media-carousel" (mouseenter)="mouseEnterCarousel()" (mouseleave)="mouseExitCarousel()"
+          (activeSlideChange)="onSlideChange($event)" [ngClass]="{'clickable': currentSlideIsPDF}">
+  <slide *ngFor="let media of media; let i = index">
+    <div [ngSwitch]="media.type" class="carousel-slide" (click)="slideClicked(i)">
+      <div *ngSwitchCase="mediaType.VIDEO" class="iframe-container">
+        <iframe [src]="urlsSanitized[i]" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+      <div *ngSwitchCase="mediaType.IMAGE" class="image-container">
+        <img [src]="media.source" alt="Image not found" class="carousel-image">
+      </div>
+      <div *ngSwitchCase="mediaType.PDF">
+        <pdf-viewer [id]="i" [src]="media.source"
+                    [render-text]="true"
+                    style="display: block;"
+                    [fit-to-page]="true" (click)="openPdf(media)"
+        ></pdf-viewer>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Click to expand!</h3>
+        </div>
+      </div>
+      <div *ngIf="media.type !== mediaType.PDF" class="carousel-caption d-none d-md-block">
+        <h3>{{media.title}}</h3>
+        <p>{{media.description}}</p>
+      </div>
+      <div class="carousel-overlay"
+           [ngClass]="{'carousel-overlay-opaque': carouselHovered, 'carousel-overlay-not-opaque': !carouselHovered}"></div>
+    </div>
+  </slide>
+</carousel>

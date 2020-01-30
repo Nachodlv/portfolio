@@ -15,6 +15,10 @@ import { TechnologyComponent } from './sections/projects/technology/technology.c
 import { ProjectDetailsComponent } from './sections/projects/project-details/project-details.component';
 import {DurationPipe} from './pipes/duration-pipe';
 import {CustomDatePipe} from './pipes/custom-date-pipe';
+import { MediaCarouselComponent } from './sections/projects/project-details/media-carousel/media-carousel.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import {NgxExtendedPdfViewerModule} from 'ngx-extended-pdf-viewer';
+import { PdfModalComponent } from './sections/projects/project-details/pdf-modal/pdf-modal.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ import {CustomDatePipe} from './pipes/custom-date-pipe';
     TechnologyComponent,
     ProjectDetailsComponent,
     DurationPipe,
-    CustomDatePipe
+    CustomDatePipe,
+    MediaCarouselComponent,
+    PdfModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,10 +43,12 @@ import {CustomDatePipe} from './pipes/custom-date-pipe';
     ButtonsModule.forRoot(),
     PopoverModule.forRoot(),
     ModalModule.forRoot(),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    PdfViewerModule,
+    NgxExtendedPdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ProjectDetailsComponent]
+  entryComponents: [ProjectDetailsComponent, PdfModalComponent]
 })
 export class AppModule { }

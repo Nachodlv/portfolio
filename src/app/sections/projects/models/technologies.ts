@@ -10,4 +10,5 @@ export class Technologies {
   public static JavaScript: Technology = new Technology('JavaScript', 'assets/images/technologies/js.png');
   public static HTML: Technology = new Technology('HTML5', 'assets/images/technologies/html.png');
   public static WebGL: Technology = new Technology('WebGL', 'assets/images/technologies/webgl.svg');
+  public static Java: Technology = new Technology('Java', 'assets/images/technologies/java.png');
 }

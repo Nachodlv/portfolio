@@ -1,6 +1,6 @@
-import {Technologies} from './technologies';
-import {ProjectMedia, ProjectMediaType} from './project-media';
-import {Project} from './project';
+import {Technologies} from '../technologies';
+import {ProjectMedia, ProjectMediaType} from '../project-media';
+import {Project} from '../project';
 
 const projectNawaiam = new Project('Nawaiam',
   'assets/images/projects/nawaiam/nawaiam2.jpeg',

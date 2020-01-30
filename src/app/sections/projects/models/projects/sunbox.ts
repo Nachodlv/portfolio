@@ -1,6 +1,6 @@
-import {Technologies} from './technologies';
-import {ProjectMedia, ProjectMediaType} from './project-media';
-import {Project} from './project';
+import {Technologies} from '../technologies';
+import {ProjectMedia, ProjectMediaType} from '../project-media';
+import {Project} from '../project';
 
 const projectSunbox = new Project('Sunbox',
   'assets/images/projects/sunbox/sunbox5.png',
@@ -26,6 +26,7 @@ const projectSunbox = new Project('Sunbox',
     'I learned how to work in a small team and to program in Javascript and WebGL.'
   ], [
     {name: 'Try it on the browser: ', link: 'https://nachodlv.github.io/sunbox/'},
+    {name: 'Code', link: 'https://github.com/nachodlv/sunbox'}
   ]);
 
 export {projectSunbox};
