@@ -17,7 +17,7 @@
           <div *ngSwitchCase="mediaType.IMAGE" class="image-container">
             <img [src]="media.source" alt="Image not found" class="carousel-image">
           </div>
-          <div *ngIf="media.title" class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-none d-md-block">
             <h3>{{media.title}}</h3>
             <p>{{media.description}}</p>
           </div>
@@ -26,9 +26,35 @@
     </carousel>
     <div class="col-lg-6">
       <h3>{{project.title}}</h3>
+      <p *ngFor="let paragraph of project.description">{{paragraph}}</p>
+      <h5>Responsibilities: </h5>
       <ul>
-        <li *ngFor="let text of project.description">{{text}}</li>
+        <li *ngFor="let text of project.responsibilities">{{text}}</li>
       </ul>
+      <div class="row">
+        <h5 class="col-auto technologies-title">Technologies used:</h5>
+        <div class="col-auto technology-icon" *ngFor="let technology of project.technologies">
+          <app-technology [technology]="technology"></app-technology>
+        </div>
+      </div>
+      <h5>Links:</h5>
+      <ul>
+        <li *ngFor="let link of project.links">{{link.name}}: <a [href]="link.link" target="_blank">{{link.link}}</a>
+        </li>
+      </ul>
+      <div class="row" *ngIf="project.store">
+        <a *ngIf="project.store.ios" [href]="project.store.ios" target="_blank" class="col-sm-4 col-6"><img class="store-image"
+                                                                                                   alt="Download it on the App Store"
+                                                                                                   data-image-resolution="300w"
+                                                                                                   src="../../../../assets/images/app-stores/ios.png">
+        </a>
+        <a *ngIf="project.store.google" [href]="project.store.google" target="_blank" class="col-sm-4 col-6"><img
+          class="store-image"
+          alt="Get it on Google Play"
+          data-image-resolution="300w"
+          src="../../../../assets/images/app-stores/google.png">
+        </a>
+      </div>
     </div>
   </div>
 </div>
