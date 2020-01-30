@@ -27,10 +27,20 @@
     <div class="col-lg-6">
       <h3>{{project.title}}</h3>
       <p *ngFor="let paragraph of project.description">{{paragraph}}</p>
-      <h5>Responsibilities: </h5>
-      <ul>
-        <li *ngFor="let text of project.responsibilities">{{text}}</li>
-      </ul>
+      <ng-container *ngIf="project.responsibilities">
+        <h5>Responsibilities: </h5>
+        <ul>
+          <li *ngFor="let text of project.responsibilities">{{text}}</li>
+        </ul>
+      </ng-container>
+      <ng-container *ngIf="project.lessonsLearned">
+        <h5>What I learned:</h5>
+        <div class="col-auto technology-icon" *ngFor="let lesson of project.lessonsLearned">
+          <ul>
+            <li>{{lesson}}</li>
+          </ul>
+        </div>
+      </ng-container>
       <div class="row">
         <h5 class="col-auto technologies-title">Technologies used:</h5>
         <div class="col-auto technology-icon" *ngFor="let technology of project.technologies">
@@ -43,10 +53,11 @@
         </li>
       </ul>
       <div class="row" *ngIf="project.store">
-        <a *ngIf="project.store.ios" [href]="project.store.ios" target="_blank" class="col-sm-4 col-6"><img class="store-image"
-                                                                                                   alt="Download it on the App Store"
-                                                                                                   data-image-resolution="300w"
-                                                                                                   src="../../../../assets/images/app-stores/ios.png">
+        <a *ngIf="project.store.ios" [href]="project.store.ios" target="_blank" class="col-sm-4 col-6"><img
+          class="store-image"
+          alt="Download it on the App Store"
+          data-image-resolution="300w"
+          src="../../../../assets/images/app-stores/ios.png">
         </a>
         <a *ngIf="project.store.google" [href]="project.store.google" target="_blank" class="col-sm-4 col-6"><img
           class="store-image"

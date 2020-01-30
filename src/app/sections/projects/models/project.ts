@@ -7,8 +7,9 @@ export class Project {
               public technologies: Technology[],
               public media: ProjectMedia[],
               public description: string[],
-              public responsibilities: string[],
-              public links: { name: string, link: string }[],
+              public responsibilities?: string[],
+              public lessonsLearned?: string[],
+              public links?: { name: string, link: string }[],
               public store?: { ios: string, google: string }) {
   }
 }
