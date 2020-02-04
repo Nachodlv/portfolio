@@ -23,6 +23,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+@angular/animations
+MIT
+
 @angular/common
 MIT
 
@@ -173,6 +176,8 @@ ngx-bootstrap/buttons
 ngx-bootstrap/carousel
 
 ngx-bootstrap/component-loader
+
+ngx-bootstrap/dropdown
 
 ngx-bootstrap/modal
 
