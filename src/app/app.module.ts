@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import {ButtonsModule, PopoverModule, ModalModule, CarouselModule} from 'ngx-bootstrap';
+import {ButtonsModule, PopoverModule, ModalModule, CarouselModule, BsDropdownModule} from 'ngx-bootstrap';
 import { AboutMeComponent } from './sections/about-me/about-me.component';
 import { SectionsComponent } from './sections/sections.component';
 import { WorkingExperiencesComponent } from './sections/working-experiences/working-experiences.component';
@@ -19,6 +19,8 @@ import { MediaCarouselComponent } from './sections/projects/project-details/medi
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import {NgxExtendedPdfViewerModule} from 'ngx-extended-pdf-viewer';
 import { PdfModalComponent } from './sections/projects/project-details/pdf-modal/pdf-modal.component';
+import { CurriculumDropdownComponent } from './sections/about-me/curriculum-dropdown/curriculum-dropdown.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { PdfModalComponent } from './sections/projects/project-details/pdf-modal
     CustomDatePipe,
     MediaCarouselComponent,
     PdfModalComponent,
+    CurriculumDropdownComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,8 @@ import { PdfModalComponent } from './sections/projects/project-details/pdf-modal
     PopoverModule.forRoot(),
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
+    BsDropdownModule.forRoot(),
+    BrowserAnimationsModule,
     PdfViewerModule,
     NgxExtendedPdfViewerModule
   ],
