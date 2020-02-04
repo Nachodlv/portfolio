@@ -1,6 +1,7 @@
 #body-app {
   background-color: var(--background-color);
   padding-top: 10px;
+  min-height: 100vh;
   app-sidebar {
     display: flex;
     padding: unset;
