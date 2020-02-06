@@ -11,4 +11,7 @@ export class Technologies {
   public static HTML: Technology = new Technology('HTML5', 'assets/images/technologies/html.png');
   public static WebGL: Technology = new Technology('WebGL', 'assets/images/technologies/webgl.svg');
   public static Java: Technology = new Technology('Java', 'assets/images/technologies/java.png');
+  public static Flutter: Technology = new Technology('Flutter', 'assets/images/technologies/flutter.png');
+  public static Spring: Technology = new Technology('Spring', 'assets/images/technologies/spring.svg');
+  public static PostgreSQL: Technology = new Technology('PostgreSQL', 'assets/images/technologies/postgresql.svg');
 }
