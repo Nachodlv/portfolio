@@ -4,6 +4,7 @@ import {projectNawaiam} from './models/projects/nawaiam';
 import {projectSunbox} from './models/projects/sunbox';
 import {projectStarShip} from './models/projects/starships';
 import {projectGeorayos} from './models/projects/georayos';
+import {projectGloomhaven} from './models/projects/gloomhaven';
 
 @Component({
   selector: 'app-projects',
@@ -20,6 +21,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
     this.projects = [
       projectNawaiam,
+      projectGloomhaven,
       projectSunbox,
       projectGeorayos,
       projectStarShip
