@@ -11,8 +11,7 @@ const projectGloomhaven = new Project('Gloomhaven',
     new ProjectMedia('assets/images/projects/gloomhaven/gloomhaven1.png', ProjectMediaType.IMAGE),
     new ProjectMedia('assets/images/projects/gloomhaven/gloomhaven2.png', ProjectMediaType.IMAGE),
     new ProjectMedia('assets/images/projects/gloomhaven/gloomhaven3.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/gloomhaven/gloomhaven4.png', ProjectMediaType.IMAGE),
-    // new ProjectMedia('assets/images/projects/gloomhaven/gloomhaven8.png', ProjectMediaType.IMAGE), // TODO add video
+    new ProjectMedia('assets/images/projects/gloomhaven/gloomhaven4.png', ProjectMediaType.IMAGE)
   ], [
     'A turn base combat game. It is a prototype I made in a few weeks.',
     'The games consists in multiple characters fighting each other. Each one has a their own abilities and stats. The abilities can have ' +

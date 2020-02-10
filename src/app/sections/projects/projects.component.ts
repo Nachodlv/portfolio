@@ -5,6 +5,7 @@ import {projectSunbox} from './models/projects/sunbox';
 import {projectStarShip} from './models/projects/starships';
 import {projectGeorayos} from './models/projects/georayos';
 import {projectGloomhaven} from './models/projects/gloomhaven';
+import {projectBookie} from './models/projects/bookie';
 
 @Component({
   selector: 'app-projects',
@@ -24,6 +25,7 @@ export class ProjectsComponent implements OnInit {
       projectGloomhaven,
       projectSunbox,
       projectGeorayos,
+      projectBookie,
       projectStarShip
     ];
   }
