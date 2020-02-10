@@ -6,6 +6,7 @@ const projectGloomhaven = new Project('Gloomhaven',
   'assets/images/projects/gloomhaven/gloomhaven2.png',
   [Technologies.Unity, Technologies.CSharp],
   [
+    new ProjectMedia('https://www.youtube.com/embed/rvleMYstowo', ProjectMediaType.VIDEO),
     new ProjectMedia('assets/images/projects/gloomhaven/gloomhaven.pdf', ProjectMediaType.PDF),
     new ProjectMedia('assets/images/projects/gloomhaven/gloomhaven1.png', ProjectMediaType.IMAGE),
     new ProjectMedia('assets/images/projects/gloomhaven/gloomhaven2.png', ProjectMediaType.IMAGE),

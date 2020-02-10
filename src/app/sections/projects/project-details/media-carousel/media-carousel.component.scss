@@ -46,10 +46,12 @@
     .carousel-overlay-not-opaque {
       opacity: 0;
       transition: opacity .5s;
+      pointer-events: none;
     }
     .carousel-overlay-opaque {
       opacity: .9;
       transition: opacity .5s;
+      pointer-events: none;
     }
   }
 }

@@ -1,7 +1,6 @@
-import {Component, Input, OnInit, QueryList, ViewChildren} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ProjectMedia, ProjectMediaType} from '../../models/project-media';
 import {DomSanitizer, SafeUrl} from '@angular/platform-browser';
-import {PdfViewerComponent} from 'ng2-pdf-viewer';
 import {PdfModalComponent} from '../pdf-modal/pdf-modal.component';
 import {BsModalRef, BsModalService} from 'ngx-bootstrap';
 
@@ -14,10 +13,8 @@ import {BsModalRef, BsModalService} from 'ngx-bootstrap';
 export class MediaCarouselComponent implements OnInit {
 
   @Input() media: ProjectMedia[];
-  @ViewChildren(PdfViewerComponent) pdfs: QueryList<PdfViewerComponent>;
   public mediaType = ProjectMediaType;
   public urlsSanitized?: SafeUrl[] = [];
-  public currentPdfViewer: PdfViewerComponent;
   public bsModalRef: BsModalRef;
   public carouselHovered: boolean;
   public currentSlideIsPDF: boolean;
@@ -26,7 +23,9 @@ export class MediaCarouselComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.media.forEach(media => this.urlsSanitized.push(this.sanitizeUrl(media.source)));
+    this.media.forEach((media) => {
+      this.urlsSanitized.push(this.sanitizeUrl(media.source));
+    });
   }
 
   private sanitizeUrl(url: string) {
@@ -55,4 +54,5 @@ export class MediaCarouselComponent implements OnInit {
       this.openPdf(this.media[index]);
     }
   }
+
 }
