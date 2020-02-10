@@ -3,7 +3,7 @@ import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
 const projectNawaiam = new Project('Nawaiam',
-  'assets/images/projects/nawaiam/nawaiam2.jpeg',
+  'assets/images/projects/nawaiam/nawaiam2.png',
   [Technologies.Unity, Technologies.CSharp, Technologies.Facebook],
   [
     new ProjectMedia('https://www.youtube.com/embed/KU-PuocS4kU?start=79', ProjectMediaType.VIDEO, 'Trailer'),
