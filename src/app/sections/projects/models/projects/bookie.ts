@@ -16,8 +16,8 @@ const projectBookie = new Project('Bookie',
     new ProjectMedia('assets/images/projects/bookie/bookie8.png', ProjectMediaType.IMAGE),
   ], [
     'Mobile application for rating books. Users can review books and see other users reviews. Users can follow each other. Books can ' +
-    'be searched by taking a photo to the ISBN code of the book',
-    'The application was made together with two partners for Mobile Computing in Reutlingen University'
+    'be searched by taking a photo to the ISBN code of the book.',
+    'The application was made together with two partners for Mobile Computing in Reutlingen University, Germany.'
   ], {
     startDate: new Date(2019, 11, 20),
     finishDate: new Date(2020, 0, 5),

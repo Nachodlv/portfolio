@@ -24,9 +24,9 @@ const projectGeorayos = new Project('Georayos',
   }, undefined,
   [
     'Learned how to develop mobile applications with Flutter',
-    'Learned different patterns for state managment in mobile applications',
+    'Learned different patterns for state management in mobile applications',
     'Learned how to get and use the location provided by the phone',
-    'Learned how to send push notifications'
+    'Learned how to send and receive push notifications'
   ]);
 
 export {projectGeorayos};
