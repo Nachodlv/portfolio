@@ -6,6 +6,7 @@ import {projectStarShip} from './models/projects/starships';
 import {projectGeorayos} from './models/projects/georayos';
 import {projectGloomhaven} from './models/projects/gloomhaven';
 import {projectBookie} from './models/projects/bookie';
+import {projectRetry} from "./models/projects/retry";
 
 @Component({
   selector: 'app-projects',
@@ -23,6 +24,7 @@ export class ProjectsComponent implements OnInit {
     this.projects = [
       projectNawaiam,
       projectGloomhaven,
+      projectRetry,
       projectSunbox,
       projectGeorayos,
       projectBookie,
