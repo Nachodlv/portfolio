@@ -6,6 +6,7 @@ const projectRetry = new Project('Retry',
   'assets/images/projects/retry/retry1.jpeg',
   [Technologies.Unity, Technologies.CSharp],
   [
+    new ProjectMedia('https://www.youtube.com/embed/itrQ_GWM4c8', ProjectMediaType.VIDEO, 'Gameplay'),
     new ProjectMedia('assets/images/projects/retry/retry1.jpeg', ProjectMediaType.IMAGE),
     new ProjectMedia('assets/images/projects/retry/retry2.jpeg', ProjectMediaType.IMAGE),
     new ProjectMedia('assets/images/projects/retry/retry3.jpeg', ProjectMediaType.IMAGE),
