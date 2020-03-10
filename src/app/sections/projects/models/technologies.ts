@@ -6,6 +6,8 @@ export class Technologies {
 
   public static Unity: Technology = new Technology('Unity', 'assets/images/technologies/unity.png');
   public static CSharp: Technology = new Technology('C#', 'assets/images/technologies/c_sharp.png');
+  public static Cpp: Technology = new Technology('C++', 'assets/images/technologies/cpp.png');
+  public static UnrealEngine: Technology = new Technology('Unreal Engine', 'assets/images/technologies/unreal_engine.png');
   public static Facebook: Technology = new Technology('Facebook API', 'assets/images/technologies/facebook.png');
   public static JavaScript: Technology = new Technology('JavaScript', 'assets/images/technologies/js.png');
   public static HTML: Technology = new Technology('HTML5', 'assets/images/technologies/html.png');
