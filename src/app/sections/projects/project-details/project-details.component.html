@@ -42,11 +42,13 @@
         <h6>Duration: {{project.time.startDate | date: "dd/MM/yyyy"}}
           - {{project.time.finishDate | date: "dd/MM/yyyy" | customDate}} ({{project.time.timeItTook | duration}})</h6>
       </div>
-      <h5>Links:</h5>
-      <ul>
-        <li *ngFor="let link of project.links">{{link.name}}: <a [href]="link.link" target="_blank">{{link.link}}</a>
-        </li>
-      </ul>
+      <ng-container *ngIf="project.links && project.links.length > 0">
+        <h5>Links:</h5>
+        <ul>
+          <li *ngFor="let link of project.links">{{link.name}}: <a [href]="link.link" target="_blank">{{link.link}}</a>
+          </li>
+        </ul>
+      </ng-container>
       <div class="row" *ngIf="project.store">
         <a *ngIf="project.store.ios" [href]="project.store.ios" target="_blank" class="col-sm-4 col-6"><img
           class="store-image"
