@@ -21,7 +21,7 @@ const projectEscape = new Project('Escape',
   ], {
     startDate: new Date(2020, 2, 1),
     finishDate: new Date(2020, 2, 10),
-    timeItTook: {years: 0, months: 0, weeks: 1.5}
+    timeItTook: {years: 0, months: 0, weeks: 1, days: 4}
   }, undefined,
   [
     'Learned the basics of Unreal Engine and how to make a basic game with it.',
