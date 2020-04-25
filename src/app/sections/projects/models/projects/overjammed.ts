@@ -23,10 +23,10 @@ const projectOverjammed = new Project('Overjammed',
   undefined, [
     'Learned how to prototype games fast and efficiently',
     'Learned how to get assets, such as music and art, and integrated with Unity',
-    ''
   ], [
+    {name: 'Game', link: 'https://nachodlv.itch.io/overjammed'},
     {name: 'Source code', link: 'https://github.com/Nachodlv/overjammed'},
-    {name: 'Game', link: 'https://nachodlv.itch.io/overjammed'}
+    {name: 'Ludum Dare submission', link: 'https://ldjam.com/events/ludum-dare/46/overjammed'}
   ]);
 
 export {projectOverjammed};
