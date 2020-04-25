@@ -8,6 +8,7 @@ import {projectGloomhaven} from './models/projects/gloomhaven';
 import {projectBookie} from './models/projects/bookie';
 import {projectRetry} from "./models/projects/retry";
 import {projectEscape} from "./models/projects/escape";
+import {projectOverjammed} from './models/projects/overjammed';
 
 @Component({
   selector: 'app-projects',
@@ -24,6 +25,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
     this.projects = [
       projectNawaiam,
+      projectOverjammed,
       projectGloomhaven,
       projectRetry,
       projectSunbox,

@@ -3,12 +3,17 @@ import {TimeTaken} from '../sections/projects/models/project';
 
 @Pipe({name: 'duration'})
 export class DurationPipe implements PipeTransform {
+
+  private static getTimeTaken(value: number, period: string): string {
+    return value === undefined || value === 0 ? '' : `${value} ${(value === 1 ? period : `${period}s`)} `;
+  }
+
   transform(value: TimeTaken): string {
-    let word: string = value.years === 0 ? '' : `${value.years} ${(value.years === 1 ? 'year' : 'years')}`;
-    word += value.months === 0 ? '' : `${value.months} ${(value.months === 1 ? 'month' : 'months')}`;
-    if (value.weeks !== undefined) {
-      word += value.weeks === 0 ? '' : `${value.weeks} ${(value.weeks === 1 ? 'week' : 'weeks')}`;
-    }
-    return word;
+    const timeTaken: string = DurationPipe.getTimeTaken(value.years, 'year') +
+      DurationPipe.getTimeTaken(value.months, 'month') +
+      DurationPipe.getTimeTaken(value.weeks, 'week') +
+      DurationPipe.getTimeTaken(value.days, 'day');
+
+    return timeTaken.substring(0, timeTaken.length - 1);
   }
 }

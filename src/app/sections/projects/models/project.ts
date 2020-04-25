@@ -19,7 +19,8 @@ export class TimeTaken {
   constructor(
     public years: number,
     public months: number,
-    public weeks?: number
+    public weeks?: number,
+    public days?: number
   ) {
   }
 }
