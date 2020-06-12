@@ -19,4 +19,5 @@ export class Technologies {
   public static Android: Technology = new Technology('Android', 'assets/images/technologies/android.png');
   public static Kotlin: Technology = new Technology('Kotlin', 'assets/images/technologies/kotlin.png');
   public static Mongo: Technology = new Technology('Mongo DB', 'assets/images/technologies/mongo.png');
+  public static Firebase: Technology = new Technology('Firebase', 'assets/images/technologies/firebase.png');
 }
