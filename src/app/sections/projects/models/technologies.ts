@@ -31,5 +31,5 @@ export class Technologies {
   // OTHERS
   public static Facebook: Technology = new Technology('Facebook API', `${Technologies.basePath}facebook.png`);
   public static Android: Technology = new Technology('Android', `${Technologies.basePath}android.png`);
-  public static Firebase: Technology = new Technology('Firebase', `${Technologies.basePath}firebase.png`);
+  public static Firebase: Technology = new Technology('Firebase', `${Technologies.basePath}firebase.svg`);
 }
