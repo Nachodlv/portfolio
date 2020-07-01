@@ -2,7 +2,9 @@
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectRetry = new Project('Retry',
+const projectRetry = new Project(
+  'retry',
+  'Retry',
   'assets/images/projects/retry/retry1.jpeg',
   [Technologies.Unity, Technologies.CSharp],
   [

@@ -2,7 +2,9 @@ import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectOverjammed = new Project('Overjammed',
+const projectOverjammed = new Project(
+  'overjammed',
+  'Overjammed',
   'assets/images/projects/overjammed/overjammed.png',
   [Technologies.Unity, Technologies.CSharp],
   [

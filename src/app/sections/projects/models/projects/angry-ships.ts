@@ -2,7 +2,9 @@
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectAngryShips = new Project('Angry Ships Remastered',
+const projectAngryShips = new Project(
+  'angry-ships',
+  'Angry Ships Remastered',
   'assets/images/projects/angry-ships/angry-ships.png',
   [Technologies.Flutter, Technologies.Node, Technologies.Firebase],
   [

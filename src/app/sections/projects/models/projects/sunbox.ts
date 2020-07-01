@@ -2,7 +2,9 @@ import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectSunbox = new Project('Sunbox',
+const projectSunbox = new Project(
+  'sunbox',
+  'Sunbox',
   'assets/images/projects/sunbox/sunbox5.png',
   [Technologies.JavaScript, Technologies.HTML, Technologies.WebGL],
   [

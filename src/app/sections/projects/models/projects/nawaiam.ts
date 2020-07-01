@@ -2,7 +2,9 @@ import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectNawaiam = new Project('Nawaiam',
+const projectNawaiam = new Project(
+  'nawaiam',
+  'Nawaiam',
   'assets/images/projects/nawaiam/nawaiam2.png',
   [Technologies.Unity, Technologies.CSharp, Technologies.Facebook],
   [

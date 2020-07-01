@@ -2,7 +2,9 @@ import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectGeorayos = new Project('Georayos',
+const projectGeorayos = new Project(
+  'georayos',
+  'Georayos',
   'assets/images/projects/georayos/georayos.png',
   [Technologies.Flutter, Technologies.Java, Technologies.Spring, Technologies.PostgreSQL],
   [

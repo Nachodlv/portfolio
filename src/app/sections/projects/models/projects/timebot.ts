@@ -2,7 +2,9 @@
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectTimeout = new Project('Timebot',
+const projectTimeout = new Project(
+  'timebot',
+  'Timebot',
   'assets/images/projects/timebot/timebot.jpeg',
   [Technologies.Unity, Technologies.CSharp],
   [

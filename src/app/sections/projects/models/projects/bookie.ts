@@ -2,7 +2,9 @@ import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectBookie = new Project('Bookie',
+const projectBookie = new Project(
+  'bookie',
+  'Bookie',
   'assets/images/projects/bookie/bookie1.png',
   [Technologies.Android, Technologies.Kotlin, Technologies.Spring, Technologies.Mongo],
   [

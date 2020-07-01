@@ -2,7 +2,9 @@ import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectGloomhaven = new Project('Gloomhaven',
+const projectGloomhaven = new Project(
+  'gloomhaven',
+  'Gloomhaven',
   'assets/images/projects/gloomhaven/gloomhaven2.png',
   [Technologies.Unity, Technologies.CSharp],
   [

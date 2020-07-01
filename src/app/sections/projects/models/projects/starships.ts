@@ -2,7 +2,9 @@ import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectStarShip = new Project('Starships',
+const projectStarShip = new Project(
+  'starships',
+  'Starships',
   'assets/images/projects/starships/starship2.png',
   [Technologies.Java],
   [

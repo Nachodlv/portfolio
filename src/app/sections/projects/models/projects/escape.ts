@@ -2,7 +2,9 @@
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectEscape = new Project('Escape',
+const projectEscape = new Project(
+  'escape',
+  'Escape',
   'assets/images/projects/escape/escape1.gif',
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
