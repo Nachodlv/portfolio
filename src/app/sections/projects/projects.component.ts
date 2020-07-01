@@ -10,6 +10,8 @@ import {projectRetry} from "./models/projects/retry";
 import {projectEscape} from "./models/projects/escape";
 import {projectOverjammed} from './models/projects/overjammed';
 import {projectTimeout} from "./models/projects/timebot";
+import {projectAngryShips} from "./models/projects/angry-ships";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-projects',
@@ -20,21 +22,28 @@ export class ProjectsComponent implements OnInit {
 
   public projects: Project[];
 
-  constructor() {
+  constructor(private route: ActivatedRoute,) {
   }
 
+
   ngOnInit() {
+    this.initializeProjects();
+    const id = this.route.snapshot.paramMap.get('id');
+  }
+
+  private initializeProjects() {
     this.projects = [
       projectNawaiam,
       projectTimeout,
       projectOverjammed,
+      projectAngryShips,
       projectGloomhaven,
       projectRetry,
       projectSunbox,
       projectEscape,
       projectGeorayos,
-      projectBookie,
-      projectStarShip
+      // projectBookie,
+      // projectStarShip
     ];
   }
 
