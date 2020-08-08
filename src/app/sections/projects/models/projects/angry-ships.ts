@@ -31,7 +31,7 @@ const projectAngryShips = new Project(
     'Leaned how to use Firebase for the login with Google'
   ], [
     {name: 'Game', link: 'http://angry-ships-remastered.ignaciodelavega.com/'},
-    // {name: 'Code', link: 'https://github.com/nachodlv/bookie'},
+    {name: 'Code', link: 'https://github.com/Nachodlv/angry-ships-remastered'},
   ]);
 
 export {projectAngryShips};
