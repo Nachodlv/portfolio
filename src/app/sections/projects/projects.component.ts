@@ -9,6 +9,8 @@ import {projectEscape} from "./models/projects/escape";
 import {projectOverjammed} from './models/projects/overjammed';
 import {projectTimeout} from "./models/projects/timebot";
 import {projectAngryShips} from "./models/projects/angry-ships";
+import {projectBookie} from "./models/projects/bookie";
+import {projectStarShip} from "./models/projects/starships";
 
 @Component({
   selector: 'app-projects',
@@ -18,6 +20,8 @@ import {projectAngryShips} from "./models/projects/angry-ships";
 export class ProjectsComponent implements OnInit {
 
   public projects: Project[];
+  public hiddenProjects: Project[];
+  public showHiddenProjects = false;
 
   constructor() {
   }
@@ -38,9 +42,20 @@ export class ProjectsComponent implements OnInit {
       projectSunbox,
       projectEscape,
       projectGeorayos,
-      // projectBookie,
-      // projectStarShip
     ];
+
+    this.hiddenProjects = [
+      projectBookie,
+      projectStarShip
+    ];
+  }
+
+  unHideProjects(): void {
+    this.showHiddenProjects = true;
+  }
+
+  hideProjects(): void {
+    this.showHiddenProjects = false;
   }
 
 }

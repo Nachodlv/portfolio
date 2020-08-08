@@ -3,4 +3,20 @@
     padding-right: 20px;
     padding-left: 20px;
   }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+    button {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+    }
+    button:focus {
+      box-shadow: 0 0 0 0.2rem rgb(68 126 187 / 50%);
+    }
+  }
+
 }
