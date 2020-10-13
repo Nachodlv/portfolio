@@ -8,10 +8,10 @@ const projectOverjammed = new Project(
   'assets/images/projects/overjammed/overjammed.png',
   [Technologies.Unity, Technologies.CSharp],
   [
-    new ProjectMedia('assets/images/projects/overjammed/overjammed2.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/overjammed/overjammed3.png', ProjectMediaType.IMAGE, undefined, 'Title screen'),
-    new ProjectMedia('assets/images/projects/overjammed/overjammed4.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/overjammed/overjammed5.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/overjammed/overjammed2.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/overjammed/overjammed3.png', ProjectMediaType.IMAGE, undefined, 'Title screen'),
+    new ProjectMedia('/assets/images/projects/overjammed/overjammed4.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/overjammed/overjammed5.png', ProjectMediaType.IMAGE),
   ], [
     'Overjammed was made in 72 hours for a Game Jam called Ludum Dare. The game is about taking care of a group of developers that are ' +
     'making a game for a Game Jam.',

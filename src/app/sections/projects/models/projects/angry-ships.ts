@@ -8,11 +8,11 @@ const projectAngryShips = new Project(
   'assets/images/projects/angry-ships/angry-ships.png',
   [Technologies.Flutter, Technologies.Node, Technologies.Firebase],
   [
-    new ProjectMedia('assets/images/projects/angry-ships/angry-ships6.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/angry-ships/angry-ships2.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/angry-ships/angry-ships3.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/angry-ships/angry-ships4.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/angry-ships/angry-ships5.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/angry-ships/angry-ships6.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/angry-ships/angry-ships2.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/angry-ships/angry-ships3.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/angry-ships/angry-ships4.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/angry-ships/angry-ships5.png', ProjectMediaType.IMAGE),
   ], [
     'Multiplayer browser game where you need to place your boats strategically and sunk the enemy boats. It was inspired' +
     'by the board game Battleship.',

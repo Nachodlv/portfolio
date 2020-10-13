@@ -8,12 +8,12 @@ const projectGeorayos = new Project(
   'assets/images/projects/georayos/georayos.png',
   [Technologies.Flutter, Technologies.Java, Technologies.Spring, Technologies.PostgreSQL],
   [
-    new ProjectMedia('assets/images/projects/georayos/georayos.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/georayos/georayos2.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/georayos/georayos3.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/georayos/georayos4.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/georayos/georayos5.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/georayos/georayos6.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/georayos/georayos.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/georayos/georayos2.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/georayos/georayos3.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/georayos/georayos4.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/georayos/georayos5.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/georayos/georayos6.png', ProjectMediaType.IMAGE),
   ], [
     'Mobile application made with Flutter for a lecture at Austral University. The backend was made with Java and Spring and the ' +
     'database with PostgreSQL.',

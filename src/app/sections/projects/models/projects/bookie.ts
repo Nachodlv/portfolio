@@ -8,14 +8,14 @@ const projectBookie = new Project(
   'assets/images/projects/bookie/bookie1.png',
   [Technologies.Android, Technologies.Kotlin, Technologies.Spring, Technologies.Mongo],
   [
-    new ProjectMedia('assets/images/projects/bookie/bookie1.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/bookie/bookie2.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/bookie/bookie3.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/bookie/bookie4.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/bookie/bookie5.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/bookie/bookie6.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/bookie/bookie7.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/bookie/bookie8.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/bookie/bookie1.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/bookie/bookie2.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/bookie/bookie3.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/bookie/bookie4.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/bookie/bookie5.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/bookie/bookie6.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/bookie/bookie7.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/bookie/bookie8.png', ProjectMediaType.IMAGE),
   ], [
     'Mobile application for rating books. Users can review books and see other users reviews. Users can follow each other. Books can ' +
     'be searched by taking a photo to the ISBN code of the book.',

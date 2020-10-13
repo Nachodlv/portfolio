@@ -9,11 +9,11 @@ const projectRetry = new Project(
   [Technologies.Unity, Technologies.CSharp],
   [
     new ProjectMedia('https://www.youtube.com/embed/itrQ_GWM4c8', ProjectMediaType.VIDEO, 'Gameplay'),
-    new ProjectMedia('assets/images/projects/retry/retry1.jpeg', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/retry/retry2.jpeg', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/retry/retry3.jpeg', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/retry/retry4.jpeg', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/retry/retry5.jpeg', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/retry/retry1.jpeg', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/retry/retry2.jpeg', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/retry/retry3.jpeg', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/retry/retry4.jpeg', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/retry/retry5.jpeg', ProjectMediaType.IMAGE),
   ], [
     'A infinite scroll space shooter. When you die, your previous self fight by your side against the enemy ships.',
     'I made all the programming in two weeks, the assets are taken from Google Images.',

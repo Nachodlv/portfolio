@@ -8,11 +8,11 @@ const projectTimeout = new Project(
   'assets/images/projects/timebot/timebot.jpeg',
   [Technologies.Unity, Technologies.CSharp],
   [
-    new ProjectMedia('assets/images/projects/timebot/timebot.jpeg', ProjectMediaType.IMAGE, undefined, 'Title screen'),
-    new ProjectMedia('assets/images/projects/timebot/timebot2.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/timebot/timebot3.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/timebot/timebot4.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/timebot/timebot5.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/timebot/timebot.jpeg', ProjectMediaType.IMAGE, undefined, 'Title screen'),
+    new ProjectMedia('/assets/images/projects/timebot/timebot2.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/timebot/timebot3.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/timebot/timebot4.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/timebot/timebot5.png', ProjectMediaType.IMAGE),
   ], [
     'Timebot was made for a game jam from gamedev.tv. The game consists in a robot that needs to test a tool to stop time ' +
     'by completing different tasks such as destroying another robots.',

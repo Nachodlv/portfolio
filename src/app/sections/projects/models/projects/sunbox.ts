@@ -8,12 +8,12 @@ const projectSunbox = new Project(
   'assets/images/projects/sunbox/sunbox5.png',
   [Technologies.JavaScript, Technologies.HTML, Technologies.WebGL],
   [
-    new ProjectMedia('assets/images/projects/sunbox/sunbox1.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/sunbox/sunbox3.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/sunbox/sunbox5.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/sunbox/sunbox6.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/sunbox/sunbox7.png', ProjectMediaType.IMAGE),
-    new ProjectMedia('assets/images/projects/sunbox/sunbox8.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/sunbox/sunbox1.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/sunbox/sunbox3.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/sunbox/sunbox5.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/sunbox/sunbox6.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/sunbox/sunbox7.png', ProjectMediaType.IMAGE),
+    new ProjectMedia('/assets/images/projects/sunbox/sunbox8.png', ProjectMediaType.IMAGE),
   ], [
     'A 3D browser simulation of the Solar System made with a WebGl library called Three.js. I made it with another developer for a side ' +
     'project at the Austral University',
