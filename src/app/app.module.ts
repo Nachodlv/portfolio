@@ -21,6 +21,8 @@ import {NgxExtendedPdfViewerModule} from 'ngx-extended-pdf-viewer';
 import { PdfModalComponent } from './sections/projects/project-details/pdf-modal/pdf-modal.component';
 import { CurriculumDropdownComponent } from './sections/about-me/curriculum-dropdown/curriculum-dropdown.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SearchProjectPipe } from './pipes/search-project.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MediaCarouselComponent,
     PdfModalComponent,
     CurriculumDropdownComponent,
+    SearchProjectPipe,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BsDropdownModule.forRoot(),
     BrowserAnimationsModule,
     PdfViewerModule,
-    NgxExtendedPdfViewerModule
+    NgxExtendedPdfViewerModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
