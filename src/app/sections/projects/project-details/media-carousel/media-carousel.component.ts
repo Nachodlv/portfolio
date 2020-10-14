@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ProjectMedia, ProjectMediaType} from '../../models/project-media';
 import {DomSanitizer, SafeUrl} from '@angular/platform-browser';
 import {PdfModalComponent} from '../pdf-modal/pdf-modal.component';
 import {BsModalRef, BsModalService} from 'ngx-bootstrap';
+import {ProjectMedia, ProjectMediaType} from '../../../../models/project-media';
 
 
 @Component({

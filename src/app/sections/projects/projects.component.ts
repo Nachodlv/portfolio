@@ -1,17 +1,17 @@
 import {Component, HostBinding, OnInit} from '@angular/core';
-import {Project} from './models/project';
-import {projectNawaiam} from './models/projects/nawaiam';
-import {projectSunbox} from './models/projects/sunbox';
-import {projectGeorayos} from './models/projects/georayos';
-import {projectGloomhaven} from './models/projects/gloomhaven';
-import {projectRetry} from './models/projects/retry';
-import {projectEscape} from './models/projects/escape';
-import {projectOverjammed} from './models/projects/overjammed';
-import {projectTimeout} from './models/projects/timebot';
-import {projectAngryShips} from './models/projects/angry-ships';
-import {projectBookie} from './models/projects/bookie';
-import {projectStarShip} from './models/projects/starships';
-import {projectNimbleGiantChallenge} from './models/projects/nimble-giant-challenge';
+import {projectAngryShips} from '../../models/projects/angry-ships';
+import {projectOverjammed} from '../../models/projects/overjammed';
+import {projectSunbox} from '../../models/projects/sunbox';
+import {Project} from '../../models/project';
+import {projectTimeout} from '../../models/projects/timebot';
+import {projectEscape} from '../../models/projects/escape';
+import {projectNimbleGiantChallenge} from '../../models/projects/nimble-giant-challenge';
+import {projectNawaiam} from '../../models/projects/nawaiam';
+import {projectGloomhaven} from '../../models/projects/gloomhaven';
+import {projectBookie} from '../../models/projects/bookie';
+import {projectStarShip} from '../../models/projects/starships';
+import {projectRetry} from '../../models/projects/retry';
+import {projectGeorayos} from '../../models/projects/georayos';
 
 @Component({
   selector: 'app-projects',

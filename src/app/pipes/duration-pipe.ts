@@ -1,5 +1,5 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import {TimeTaken} from '../sections/projects/models/project';
+import {TimeTaken} from '../models/project';
 
 @Pipe({name: 'duration'})
 export class DurationPipe implements PipeTransform {

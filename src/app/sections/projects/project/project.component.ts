@@ -1,10 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Project} from '../models/project';
 import {BsModalRef, BsModalService, ModalOptions} from 'ngx-bootstrap';
 import {ProjectDetailsComponent} from '../project-details/project-details.component';
-import {ActivatedRoute} from "@angular/router";
-import {Location} from "@angular/common";
-
+import {Project} from '../../../models/project';
+import {ActivatedRoute} from '@angular/router';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-project',

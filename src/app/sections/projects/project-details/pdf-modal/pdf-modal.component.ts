@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ProjectMedia} from '../../models/project-media';
 import {BsModalRef} from 'ngx-bootstrap';
+import {ProjectMedia} from '../../../../models/project-media';
 
 @Component({
   selector: 'app-pdf-modal',
