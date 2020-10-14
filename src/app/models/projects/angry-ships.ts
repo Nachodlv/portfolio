@@ -1,4 +1,4 @@
-﻿import {Technologies} from '../technologies';
+﻿﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
