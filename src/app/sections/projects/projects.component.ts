@@ -11,6 +11,7 @@ import {projectTimeout} from './models/projects/timebot';
 import {projectAngryShips} from './models/projects/angry-ships';
 import {projectBookie} from './models/projects/bookie';
 import {projectStarShip} from './models/projects/starships';
+import {projectNimbleGiantChallenge} from './models/projects/nimble-giant-challenge';
 
 @Component({
   selector: 'app-projects',
@@ -43,6 +44,7 @@ export class ProjectsComponent implements OnInit {
       projectGloomhaven,
       projectRetry,
       projectSunbox,
+      projectNimbleGiantChallenge,
       projectEscape,
       projectGeorayos,
       projectBookie,
