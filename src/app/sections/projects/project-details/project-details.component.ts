@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Project} from '../models/project';
 import {BsModalRef} from 'ngx-bootstrap';
 import { Location } from '@angular/common';
+import {Project} from '../../../models/project';
 
 @Component({
   selector: 'app-project-details',

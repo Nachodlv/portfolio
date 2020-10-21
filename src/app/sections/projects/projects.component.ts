@@ -3,7 +3,7 @@ import {projectAngryShips} from '../../models/projects/angry-ships';
 import {projectOverjammed} from '../../models/projects/overjammed';
 import {projectSunbox} from '../../models/projects/sunbox';
 import {Project} from '../../models/project';
-import {projectTimeout} from '../../models/projects/timebot';
+import {projectTimebot} from '../../models/projects/timebot';
 import {projectEscape} from '../../models/projects/escape';
 import {projectNimbleGiantChallenge} from '../../models/projects/nimble-giant-challenge';
 import {projectNawaiam} from '../../models/projects/nawaiam';
@@ -12,6 +12,7 @@ import {projectBookie} from '../../models/projects/bookie';
 import {projectStarShip} from '../../models/projects/starships';
 import {projectRetry} from '../../models/projects/retry';
 import {projectGeorayos} from '../../models/projects/georayos';
+import {ProjectGroup} from '../../models/project-group';
 
 @Component({
   selector: 'app-projects',
@@ -27,6 +28,7 @@ export class ProjectsComponent implements OnInit {
   public showHiddenProjects = false;
   public projectLimit = 9;
   public searchInput = '';
+  public projectGroups: ProjectGroup[] = [];
 
   constructor() {
   }
@@ -38,7 +40,7 @@ export class ProjectsComponent implements OnInit {
   private initializeProjects() {
     this.projects = [
       projectNawaiam,
-      projectTimeout,
+      projectTimebot,
       projectOverjammed,
       projectAngryShips,
       projectGloomhaven,

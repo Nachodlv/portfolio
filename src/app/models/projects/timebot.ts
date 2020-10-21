@@ -2,7 +2,7 @@
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
-const projectTimeout = new Project(
+const projectTimebot = new Project(
   'timebot',
   'Timebot',
   'assets/images/projects/timebot/timebot.jpeg',
@@ -32,4 +32,4 @@ const projectTimeout = new Project(
     {name: 'GameDev.tv submission', link: 'https://itch.io/jam/gamedevtv-community-jam/rate/658034'}
   ]);
 
-export {projectTimeout};
+export {projectTimebot};

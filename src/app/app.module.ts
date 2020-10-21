@@ -23,6 +23,7 @@ import { CurriculumDropdownComponent } from './sections/about-me/curriculum-drop
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { SearchProjectPipe } from './pipes/search-project.pipe';
 import { FormsModule } from '@angular/forms';
+import { ProjectGroupFilterComponent } from './sections/projects/project-group-filter/project-group-filter.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { FormsModule } from '@angular/forms';
     PdfModalComponent,
     CurriculumDropdownComponent,
     SearchProjectPipe,
+    ProjectGroupFilterComponent,
   ],
   imports: [
     BrowserModule,
