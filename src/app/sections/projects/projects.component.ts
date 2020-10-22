@@ -25,8 +25,6 @@ import {ProjectGroup} from '../../models/project-group';
 export class ProjectsComponent implements OnInit {
 
   public projects: Project[];
-  public showHiddenProjects = false;
-  public projectLimit = 9;
   public searchInput = '';
   public projectGroups: ProjectGroup[] = [];
 
@@ -35,6 +33,10 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.initializeProjects();
+  }
+
+  projectGroupsChanged(projectGroups: ProjectGroup[]): void {
+    this.projectGroups = projectGroups;
   }
 
   private initializeProjects() {

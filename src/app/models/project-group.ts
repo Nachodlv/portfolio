@@ -54,14 +54,14 @@ export const purposeCategory = new GroupCategory(
     new ProjectGroup('Work', [
       projectNawaiam
     ]),
-    new ProjectGroup('Challenge', [
-      projectNimbleGiantChallenge,
-    ]),
     new ProjectGroup('Game Jam', [
       projectTimebot,
       projectOverjammed,
     ]),
-    new ProjectGroup('Side projects', [
+    new ProjectGroup('Challenge', [
+      projectNimbleGiantChallenge,
+    ]),
+    new ProjectGroup('Side project', [
       projectGloomhaven,
       projectRetry,
       projectEscape,

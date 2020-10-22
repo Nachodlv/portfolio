@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {engineCategory, GroupCategory, purposeCategory} from '../../../models/project-group';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {engineCategory, GroupCategory, ProjectGroup, purposeCategory} from '../../../models/project-group';
 
 @Component({
   selector: 'app-project-group-filter',
@@ -8,7 +8,11 @@ import {engineCategory, GroupCategory, purposeCategory} from '../../../models/pr
 })
 export class ProjectGroupFilterComponent implements OnInit {
 
+  @Output() projectGroups = new EventEmitter<ProjectGroup[]>();
+
   groupCategories: GroupCategory[];
+  groupCategorySelected: GroupCategory;
+  projectGroupsSelected: boolean[];
 
   constructor() {
   }
@@ -18,6 +22,17 @@ export class ProjectGroupFilterComponent implements OnInit {
       engineCategory,
       purposeCategory,
     ];
+    this.onGroupCategorySelected(this.groupCategories[0]);
   }
 
+  onGroupCategorySelected(groupCategory: GroupCategory): void {
+    this.groupCategorySelected = groupCategory;
+    this.projectGroupsSelected = this.groupCategorySelected.projectGroups.map(_ => true);
+    this.projectGroups.emit(this.groupCategorySelected.projectGroups);
+  }
+
+  onProjectGroupSelected(isSelected: boolean, index: number): void {
+    this.projectGroupsSelected[index] = isSelected;
+    this.projectGroups.emit(this.groupCategorySelected.projectGroups.filter((group, i) => this.projectGroupsSelected[i]));
+  }
 }
