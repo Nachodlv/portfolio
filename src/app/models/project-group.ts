@@ -11,6 +11,7 @@ import {projectBookie} from './projects/bookie';
 import {projectGeorayos} from './projects/georayos';
 import {projectStarShip} from './projects/starships';
 import {projectSunbox} from './projects/sunbox';
+import {projectLupe} from './projects/lupe';
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -29,6 +30,7 @@ export const engineCategory: GroupCategory = new GroupCategory(
     new ProjectGroup('Unity', [
       projectNawaiam,
       projectTimebot,
+      projectLupe,
       projectOverjammed,
       projectGloomhaven,
       projectRetry,
@@ -56,6 +58,7 @@ export const purposeCategory = new GroupCategory(
     ]),
     new ProjectGroup('Game Jam', [
       projectTimebot,
+      projectLupe,
       projectOverjammed,
     ]),
     new ProjectGroup('Challenge', [
