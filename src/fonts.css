@@ -1,9 +1,4 @@
 @font-face {
-  font-family: Ubuntu;
-  src: url(assets/font/Ubuntu/Ubuntu-Regular.ttf) format("opentype");
-}
-
-@font-face {
-  font-family: Ubuntu Bold;
-  src: url(assets/font/Ubuntu/Ubuntu-Bold.ttf) format("opentype");
+  font-family: Rubik;
+  src: url(assets/font/Rubik/Rubik-VariableFont_wght.ttf) format("opentype");
 }
