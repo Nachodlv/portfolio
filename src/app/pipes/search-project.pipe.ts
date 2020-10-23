@@ -24,7 +24,10 @@ export class SearchProjectPipe implements PipeTransform {
         group.name.toLowerCase().includes(lowerCaseSearch) ||
         SearchProjectPipe.searchProjects(group.projects, lowerCaseSearch).length > 0)
       .map(group =>
-        new ProjectGroup(group.name, SearchProjectPipe.searchProjects(group.projects, lowerCaseSearch))
+        new ProjectGroup(group.name,
+          group.name.toLowerCase().includes(lowerCaseSearch) ?
+            group.projects :
+            SearchProjectPipe.searchProjects(group.projects, lowerCaseSearch))
       );
   }
 }
