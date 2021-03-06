@@ -12,6 +12,7 @@ import {projectGeorayos} from './projects/georayos';
 import {projectStarShip} from './projects/starships';
 import {projectSunbox} from './projects/sunbox';
 import {projectLupe} from './projects/lupe';
+import {projectToonTanks} from './projects/toon-tanks';
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -36,6 +37,7 @@ export const engineCategory: GroupCategory = new GroupCategory(
       projectRetry,
     ]),
     new ProjectGroup('Unreal Engine', [
+      projectToonTanks,
       projectNimbleGiantChallenge,
       projectEscape,
     ]),
@@ -65,6 +67,7 @@ export const purposeCategory = new GroupCategory(
       projectNimbleGiantChallenge,
     ]),
     new ProjectGroup('Side project', [
+      projectToonTanks,
       projectGloomhaven,
       projectRetry,
       projectEscape,

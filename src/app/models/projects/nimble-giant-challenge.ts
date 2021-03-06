@@ -1,10 +1,10 @@
-﻿﻿import {Technologies} from '../technologies';
+﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
 import {Project} from '../project';
 
 const projectNimbleGiantChallenge = new Project(
   'nimble-giant-challenge',
-  'Nimble Giant Challenge',
+  'NGD Challenge',
   '/assets/images/projects/nimble-giant-challenge/nimble-giant-challenge1.gif',
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
