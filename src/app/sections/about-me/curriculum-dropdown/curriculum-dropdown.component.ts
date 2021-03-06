@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Curriculum} from './curriculum';
+import {userIcon} from '../../../svgs/svgs';
 
 @Component({
   selector: 'app-curriculum-dropdown',
@@ -9,14 +10,15 @@ import {Curriculum} from './curriculum';
 export class CurriculumDropdownComponent implements OnInit {
 
   public curriculum: Curriculum[];
+  userIcon = userIcon;
 
   constructor() {
   }
 
   ngOnInit() {
     this.curriculum = [
-      new Curriculum('assets/documents/curriculum/CurriculumES.pdf', 'Español'),
-      new Curriculum('assets/documents/curriculum/CurriculumEN.pdf', 'English')
+      new Curriculum('assets/documents/curriculum/CurriculumEN.pdf', 'English'),
+      new Curriculum('assets/documents/curriculum/CurriculumES.pdf', 'Spanish'),
     ];
   }
 

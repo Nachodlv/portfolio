@@ -12,11 +12,10 @@
   }
 
   #web-images {
-    img {
-      height: auto;
-      width: 100px;
-      -webkit-filter: grayscale(30%);
-      filter: grayscale(30%);
+    display: flex;
+    app-circular-button, app-curriculum-dropdown
+    {
+      padding-right: 20px;
     }
   }
 }

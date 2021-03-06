@@ -1,0 +1,9 @@
+<a class="circular-button" [href]="href" target="_blank" (click)="!dropdownToggle" [popover]="buttonPopover" triggers="mouseenter:mouseleave">
+  <div class="svg-container"
+       [attr.aria-controls]="ariaControls" [attr.id]="popOverId" [attr.dropdownToggle]="dropdownToggle">
+    <svg #svgElement [attr.viewBox]="x + ' ' + y + ' ' + width + ' ' + height" >
+    </svg>
+  </div>
+  <p *ngIf="text">{{text}}</p>
+</a>
+

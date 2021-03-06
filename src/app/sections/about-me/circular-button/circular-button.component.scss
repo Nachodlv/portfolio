@@ -1,0 +1,19 @@
+.circular-button {
+  .svg-container {
+    background-color: #698ebe;
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    border-radius: 50px;
+
+    svg {
+      fill: var(--primary-color);
+      padding: 7px;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
