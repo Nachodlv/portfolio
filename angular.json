@@ -133,7 +133,7 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "cname": "ignaciodelavega.com",
-            "repo": "https://github.com/Nachodlv/portfolio.git",
+            "repo": "git@github.com:Nachodlv/portfolio.git",
             "name": "Nachodlv",
             "email": "ignacio.delavega@ing.austral.edu.ar"
           }
