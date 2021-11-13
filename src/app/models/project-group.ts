@@ -14,6 +14,7 @@ import {projectSunbox} from './projects/sunbox';
 import {projectLupe} from './projects/lupe';
 import {projectToonTanks} from './projects/toon-tanks';
 import {projectWestestShowdown} from './projects/westest-showdown';
+import {projectCyberwalk} from './projects/cyberwalk';
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -38,6 +39,7 @@ export const engineCategory: GroupCategory = new GroupCategory(
     new ProjectGroup('Unity', [
       projectNawaiam,
       projectTimebot,
+      projectCyberwalk,
       projectLupe,
       projectOverjammed,
       projectGloomhaven,
@@ -60,13 +62,14 @@ export const purposeCategory = new GroupCategory(
     new ProjectGroup('Work', [
       projectNawaiam
     ]),
-    new ProjectGroup('Game Jam', [
+    new ProjectGroup('Game Jams', [
+      projectWestestShowdown,
+      projectCyberwalk,
       projectTimebot,
       projectLupe,
       projectOverjammed,
-      projectWestestShowdown,
     ]),
-    new ProjectGroup('Side project', [
+    new ProjectGroup('Side projects', [
       projectToonTanks,
       projectNimbleGiantChallenge,
       projectGloomhaven,

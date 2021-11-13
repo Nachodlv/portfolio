@@ -21,8 +21,8 @@ const projectWestestShowdown = new Project(
     'The game was mode for the game jam Ludum Dare 48 in three days.' ,
     'The team was compose of two programmers, one 3D artist and one music composer'
   ], {
-    startDate: new Date(2020, 3, 24),
-    finishDate: new Date(2020, 3, 26),
+    startDate: new Date(2021, 3, 24),
+    finishDate: new Date(2021, 3, 26),
     timeItTook: {years: 0, months: 0, weeks: 0, days: 3}
   }, undefined,
   [
