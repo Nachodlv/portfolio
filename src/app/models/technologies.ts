@@ -4,12 +4,13 @@ export class Technology {
 
 export class Technologies {
 
-  private static basePath = "assets/images/technologies/";
+  private static basePath = 'assets/images/technologies/';
 
   // GAME DEV
   public static Unity: Technology = new Technology('Unity', `${Technologies.basePath}unity.png`);
   public static UnrealEngine: Technology = new Technology('Unreal Engine', `${Technologies.basePath}unreal_engine.png`);
   public static WebGL: Technology = new Technology('WebGL', `${Technologies.basePath}webgl.svg`);
+  public static Godot: Technology = new Technology('Godot', `${Technologies.basePath}godot.svg`);
 
   // BACKEND
   public static Spring: Technology = new Technology('Spring', `${Technologies.basePath}spring.svg`);

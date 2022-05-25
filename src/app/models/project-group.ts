@@ -16,6 +16,7 @@ import {projectToonTanks} from './projects/toon-tanks';
 import {projectWestestShowdown} from './projects/westest-showdown';
 import {projectCyberwalk} from './projects/cyberwalk';
 import {projectRobophaser} from './projects/robophaser';
+import {projectForgeMadness} from './projects/forge-madness';
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -47,6 +48,9 @@ export const engineCategory: GroupCategory = new GroupCategory(
       projectGloomhaven,
       projectRetry,
     ]),
+    new ProjectGroup('Godot', [
+      projectForgeMadness
+    ]),
     new ProjectGroup('Other', [
       projectAngryShips,
       projectBookie,
@@ -68,6 +72,7 @@ export const purposeCategory = new GroupCategory(
       projectWestestShowdown,
       projectCyberwalk,
       projectTimebot,
+      projectForgeMadness,
       projectLupe,
       projectOverjammed,
     ]),
