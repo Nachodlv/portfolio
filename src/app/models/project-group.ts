@@ -15,6 +15,7 @@ import {projectLupe} from './projects/lupe';
 import {projectToonTanks} from './projects/toon-tanks';
 import {projectWestestShowdown} from './projects/westest-showdown';
 import {projectCyberwalk} from './projects/cyberwalk';
+import {projectRobophaser} from './projects/robophaser';
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -37,6 +38,7 @@ export const engineCategory: GroupCategory = new GroupCategory(
       projectEscape,
     ]),
     new ProjectGroup('Unity', [
+      projectRobophaser,
       projectNawaiam,
       projectTimebot,
       projectCyberwalk,
@@ -78,6 +80,7 @@ export const purposeCategory = new GroupCategory(
       projectSunbox,
     ]),
     new ProjectGroup('University', [
+      projectRobophaser,
       projectAngryShips,
       projectBookie,
       projectGeorayos,
