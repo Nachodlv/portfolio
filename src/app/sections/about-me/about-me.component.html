@@ -13,7 +13,8 @@
     <p class="card-text">Graduated as a Software Engineer in Austral University, Buenos Aires, Argentina. I studied
       abroad for six month in Germany between september 2019 and february 2020</p>
     <div id="web-images" class="row pl-3 pt-3 pt-sm-0">
-      <app-curriculum-dropdown></app-curriculum-dropdown>
+      <app-circular-button [svg]="userIcon" [href]="curriculumUrl"
+                           buttonPopover="Curriculum" [x]="2" [y]="2" [width]="20" [height]="20" text="CV"></app-circular-button>
       <app-circular-button [svg]="githubIcon" href="https://github.com/Nachodlv" buttonPopover="Nachodlv" [width]="33"
                            [height]="33" [x]="-2" [y]="-2" text="Github"></app-circular-button>
       <app-circular-button [svg]="linkedInIcon" href="https://www.linkedin.com/in/ignacio-d-41ba07100/"

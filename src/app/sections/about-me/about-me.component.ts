@@ -13,6 +13,8 @@ export class AboutMeComponent implements OnInit {
   envelopeIcon = envelopeIcon;
   userIcon = userIcon;
 
+  curriculumUrl = 'assets/documents/curriculum/CurriculumEN.pdf';
+
   constructor() { }
 
   ngOnInit() {
