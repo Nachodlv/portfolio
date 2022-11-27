@@ -5,13 +5,13 @@ import {Project} from '../project';
 const projectNavMesh = new Project(
   'navmesh',
   'Custom Navigation Mesh',
-  'https://drive.google.com/uc?export=view&id=1PD7q5vYqcSP9ne6w-IYOpxzgzrx6XNcw',
+  ProjectMedia.getGoogleDriveUrl('1PD7q5vYqcSP9ne6w-IYOpxzgzrx6XNcw'),
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
     new ProjectMedia('https://www.youtube.com/embed/tQc5QeUWZQ0', ProjectMediaType.VIDEO),
-    new ProjectMedia('https://drive.google.com/uc?export=view&id=1PD7q5vYqcSP9ne6w-IYOpxzgzrx6XNcw', ProjectMediaType.IMAGE),
-    new ProjectMedia('https://drive.google.com/uc?export=view&id=1P5XQO3KrkrYzSQsezLSD-NPZn3py7Mf3', ProjectMediaType.IMAGE),
-    new ProjectMedia('https://drive.google.com/uc?export=view&id=1N7mFoVK-btS9kBebheJ6vgbcAfpBz-iO', ProjectMediaType.IMAGE),
+    new ProjectMedia(ProjectMedia.getGoogleDriveUrl('1PD7q5vYqcSP9ne6w-IYOpxzgzrx6XNcw'), ProjectMediaType.IMAGE),
+    new ProjectMedia(ProjectMedia.getGoogleDriveUrl('1P5XQO3KrkrYzSQsezLSD-NPZn3py7Mf3'), ProjectMediaType.IMAGE),
+    new ProjectMedia(ProjectMedia.getGoogleDriveUrl('1N7mFoVK-btS9kBebheJ6vgbcAfpBz-iO'), ProjectMediaType.IMAGE),
   ], [
     'Implemented a multi threaded custom navigation mesh generator in Unreal Engine from scratch.',
     'As seen in the attached video, the calculation of the navmesh is being made in another thread and it does not freeze the engine.' +

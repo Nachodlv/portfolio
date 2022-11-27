@@ -10,6 +10,10 @@ export class ProjectMedia {
     this.source = source;
 
   }
+
+  public static getGoogleDriveUrl(imageId: string): string {
+    return `https://drive.google.com/uc?export=view&id=${imageId}`;
+  }
 }
 
 export enum ProjectMediaType {

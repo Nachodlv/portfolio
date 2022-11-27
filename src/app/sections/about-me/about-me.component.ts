@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {envelopeIcon, githubIcon, linkedInIcon, userIcon} from '../../svgs/svgs';
+import {ProjectMedia} from '../../models/project-media';
 
 @Component({
   selector: 'app-about-me',
@@ -12,6 +13,8 @@ export class AboutMeComponent implements OnInit {
   linkedInIcon = linkedInIcon;
   envelopeIcon = envelopeIcon;
   userIcon = userIcon;
+
+  getGoogleDriveUrl = ProjectMedia.getGoogleDriveUrl;
 
   curriculumUrl = 'assets/documents/curriculum/CurriculumEN.pdf';
 
