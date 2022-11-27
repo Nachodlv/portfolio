@@ -9,6 +9,9 @@ export class DurationPipe implements PipeTransform {
   }
 
   transform(value?: TimeTaken): string {
+    if (!value) {
+      return '';
+    }
     const timeTaken: string = DurationPipe.getTimeTaken(value.years, 'year') +
       DurationPipe.getTimeTaken(value.months, 'month') +
       DurationPipe.getTimeTaken(value.weeks, 'week') +

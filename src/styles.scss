@@ -4,11 +4,35 @@ a {
 }
 
 :root {
-  --primary-color: white;
-  --secondary-color: #4471a2;
-  --background-color: #a7bcc3;
-  --secondary-background-color: #ffffffb3;
-  --text-color: #2d2d2d;
+  // Light mode
+  //--primary-color: white;
+  //--secondary-color: #4471a2;
+  //--background-color: #a7bcc3;
+  //--secondary-background-color: #ffffffb3;
+  //--text-color: #2d2d2d;
+  //--secondary-text-color: #908b8b;
+  //--input-color: var(--primary-color);
+
+  // Dark mode
+  --primary-color: #F2F2F2;
+  --secondary-color: #595959;
+  --background-color: #262626;
+  --secondary-background-color: #0D0D0D;
+  --text-color: #BFBFBF;
+  --secondary-text-color: #BFBFBF;
+  --input-color: var(--background-color);
+}
+
+p, li, h3, h4, h6, label {
+  color: var(--text-color);
+}
+
+h5 {
+  color: var(--secondary-text-color);
+}
+
+input {
+  background-color: var(--secondary-color);
 }
 
 .modal-lg {

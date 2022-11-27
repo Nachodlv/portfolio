@@ -25,12 +25,16 @@
     }
   }
 
+  .technology-container {
+    height: 40px;
+  }
+
 }
 
 #project:hover {
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
 
   .title {
-    color: white;
+    color: var(--primary-color);
   }
 }

@@ -1,8 +1,10 @@
 <div id="project" (click)="openProjectDetails()">
-  <div class="row">
+  <div class="row mb-3">
     <h3 class="col-auto title">{{project.title}}</h3>
-    <div class="col-auto technology-icon" *ngFor="let technology of project.technologies">
-      <app-technology [technology]="technology"></app-technology>
+    <div class="technology-container row align-items-center ml-2 pr-2 pl-0 justify-content-center">
+      <div class="technology-icon" *ngFor="let technology of project.technologies">
+        <app-technology [technology]="technology"></app-technology>
+      </div>
     </div>
   </div>
   <div class="project-image-container"><img [src]="project.image" alt="Image not found" class="project-image"></div>

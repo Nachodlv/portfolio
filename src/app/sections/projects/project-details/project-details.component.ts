@@ -6,7 +6,7 @@ import {Project} from '../../../models/project';
 @Component({
   selector: 'app-project-details',
   templateUrl: './project-details.component.html',
-  styleUrls: ['./project-details.component.scss'],
+  styleUrls: ['./project-details.component.scss', '../projects.component.scss'],
 })
 export class ProjectDetailsComponent implements OnInit {
 

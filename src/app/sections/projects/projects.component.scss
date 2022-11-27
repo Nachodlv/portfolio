@@ -1,4 +1,22 @@
 #projects {
+  .form-control {
+    background-color: var(--input-color);
+    color: var(--text-color);
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--secondary-text-color);
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--secondary-text-color);
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--secondary-text-color);
+  }
+
   .project-group-name {
     padding-left: 10px;
     padding-top: 30px;
@@ -25,5 +43,9 @@
       box-shadow: 0 0 0 0.2rem rgb(68 126 187 / 50%);
     }
   }
+}
 
+.technology-container {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
 }
