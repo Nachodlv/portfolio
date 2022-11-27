@@ -17,6 +17,7 @@ import {projectWestestShowdown} from './projects/westest-showdown';
 import {projectCyberwalk} from './projects/cyberwalk';
 import {projectRobophaser} from './projects/robophaser';
 import {projectForgeMadness} from './projects/forge-madness';
+import {projectNavMesh} from './projects/navmesh';
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -33,6 +34,7 @@ export const engineCategory: GroupCategory = new GroupCategory(
   'Engine',
   [
     new ProjectGroup('Unreal Engine', [
+      projectNavMesh,
       projectToonTanks,
       projectWestestShowdown,
       projectNimbleGiantChallenge,
@@ -77,6 +79,7 @@ export const purposeCategory = new GroupCategory(
       projectOverjammed,
     ]),
     new ProjectGroup('Side projects', [
+      projectNavMesh,
       projectToonTanks,
       projectNimbleGiantChallenge,
       projectGloomhaven,

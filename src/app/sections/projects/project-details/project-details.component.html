@@ -40,7 +40,7 @@
       </div>
       <div>
         <h6>Duration: {{project.time.startDate | date: "dd/MM/yyyy"}}
-          - {{project.time.finishDate | date: "dd/MM/yyyy" | customDate}} ({{project.time.timeItTook | duration}})</h6>
+          - {{project.time.finishDate | date: "dd/MM/yyyy" | customDate}} {{project.time.timeItTook | duration}}</h6>
       </div>
       <ng-container *ngIf="project.links && project.links.length > 0">
         <h5>Links:</h5>

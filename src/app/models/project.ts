@@ -9,7 +9,7 @@ export class Project {
     public technologies: Technology[],
     public media: ProjectMedia[],
     public description: string[],
-    public time: { startDate: Date, finishDate?: Date, timeItTook: TimeTaken },
+    public time: { startDate: Date, finishDate?: Date, timeItTook?: TimeTaken },
     public responsibilities?: string[],
     public lessonsLearned?: string[],
     public links?: { name: string, link: string }[],

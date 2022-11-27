@@ -4,7 +4,7 @@ import {Pipe, PipeTransform} from '@angular/core';
 export class CustomDatePipe implements PipeTransform {
   transform(value: string) {
     if (!value) {
-      return 'present';
+      return 'now';
     } else {
       return value;
     }

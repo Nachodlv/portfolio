@@ -8,12 +8,12 @@ export class DurationPipe implements PipeTransform {
     return value === undefined || value === 0 ? '' : `${value} ${(value === 1 ? period : `${period}s`)} `;
   }
 
-  transform(value: TimeTaken): string {
+  transform(value?: TimeTaken): string {
     const timeTaken: string = DurationPipe.getTimeTaken(value.years, 'year') +
       DurationPipe.getTimeTaken(value.months, 'month') +
       DurationPipe.getTimeTaken(value.weeks, 'week') +
       DurationPipe.getTimeTaken(value.days, 'day');
 
-    return timeTaken.substring(0, timeTaken.length - 1);
+    return `(${timeTaken.substring(0, timeTaken.length - 1)})`;
   }
 }
