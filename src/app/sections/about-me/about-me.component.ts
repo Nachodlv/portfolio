@@ -14,8 +14,6 @@ export class AboutMeComponent implements OnInit {
   envelopeIcon = envelopeIcon;
   userIcon = userIcon;
 
-  getGoogleDriveUrl = ProjectMedia.getGoogleDriveUrl;
-
   curriculumUrl = 'assets/documents/curriculum/CurriculumEN.pdf';
 
   constructor() { }
