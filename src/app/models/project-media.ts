@@ -11,6 +11,9 @@ export class ProjectMedia {
 
   }
 
+  public static getGoogleDriveUrl(imageId: string): string {
+    return `https://lh3.googleusercontent.com/d/${imageId}=w1000`;
+  }
   public static getYoutubeUrl(videoId: string): string {
     return `https://www.youtube.com/embed/${videoId}`;
   }
