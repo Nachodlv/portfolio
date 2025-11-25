@@ -133,9 +133,10 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "cname": "ignaciodelavega.com",
-            "repo": "git@github.com:Nachodlv/portfolio.git",
+            "repo": "https://github.com/Nachodlv/portfolio",
             "name": "Nachodlv",
-            "email": "ignacio.delavega@ing.austral.edu.ar"
+            "email": "ignacio.delavega@ing.austral.edu.ar",
+            "silent": false
           }
         }
       }
