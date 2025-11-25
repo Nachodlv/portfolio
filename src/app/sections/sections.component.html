@@ -5,14 +5,22 @@
     </div>
   </div>
 </div>
-<!--TODO move section to a component-->
+
+<div class="section px-3">
+  <tabset #tabs>
+    <tab heading="Personal Projects" id="tab1" (selectTab)="onSelect($event, 0)">
+    </tab>
+    <tab heading="Professional Projects" (selectTab)="onSelect($event, 1)">
+    </tab>
+  </tabset>
+</div>
+
 <div class="section px-3">
   <div class="card shadow" style="width: 18rem;">
     <div class="card-body row">
-      <router-outlet id="projects-nav" aria-labelledby="projects-nav" role="tabpanel" class="w-100"></router-outlet>
+      <div id="projects-nav" aria-labelledby="projects-nav" role="tabpanel" class="w-100">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>
-
-
-

@@ -1,6 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {BsModalRef} from 'ngx-bootstrap';
-import { Location } from '@angular/common';
 import {Project} from '../../../models/project';
 
 @Component({
@@ -8,20 +7,14 @@ import {Project} from '../../../models/project';
   templateUrl: './project-details.component.html',
   styleUrls: ['./project-details.component.scss', '../projects.component.scss'],
 })
-export class ProjectDetailsComponent implements OnInit {
+export class ProjectDetailsComponent {
 
   @Input() public project: Project;
 
-  constructor(public bsModalRef: BsModalRef, private location: Location) {
-  }
-
-  ngOnInit() {
+  constructor(public bsModalRef: BsModalRef) {
   }
 
   closeModal() {
-    this.location.replaceState(`/projects`)
     this.bsModalRef.hide();
   }
-
-
 }

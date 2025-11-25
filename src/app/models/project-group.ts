@@ -25,76 +25,38 @@ export class ProjectGroup {
   }
 }
 
-export class GroupCategory {
-  constructor(public id: string, public name: string, public projectGroups: ProjectGroup[]) {
-  }
-}
+export const professionalProjects = [
+  new ProjectGroup('Unity', [
+    projectNawaiam,
+  ]),
+];
 
-export const engineCategory: GroupCategory = new GroupCategory(
-  'engine',
-  'Engine',
-  [
-    new ProjectGroup('Unreal Engine', [
-      projectMD,
-      projectNavMesh,
-      projectToonTanks,
-      projectWestestShowdown,
-      projectNimbleGiantChallenge,
-      projectEscape,
-    ]),
-    new ProjectGroup('Unity', [
-      projectRobophaser,
-      projectNawaiam,
-      projectTimebot,
-      projectCyberwalk,
-      projectLupe,
-      projectOverjammed,
-      projectGloomhaven,
-      projectRetry,
-    ]),
-    new ProjectGroup('Godot', [
-      projectForgeMadness
-    ]),
-    new ProjectGroup('Other', [
-      projectAngryShips,
-      projectBookie,
-      projectSunbox,
-      projectGeorayos,
-      projectStarShip,
-    ])
-  ]
-);
-
-export const purposeCategory = new GroupCategory(
-  'purpose',
-  'Purpose',
-  [
-    new ProjectGroup('Work', [
-      projectNawaiam
-    ]),
-    new ProjectGroup('Game Jams', [
-      projectWestestShowdown,
-      projectCyberwalk,
-      projectTimebot,
-      projectForgeMadness,
-      projectLupe,
-      projectOverjammed,
-    ]),
-    new ProjectGroup('Side projects', [
-      projectMD,
-      projectNavMesh,
-      projectToonTanks,
-      projectNimbleGiantChallenge,
-      projectGloomhaven,
-      projectRetry,
-      projectEscape,
-      projectSunbox,
-    ]),
-    new ProjectGroup('University', [
-      projectRobophaser,
-      projectAngryShips,
-      projectBookie,
-      projectGeorayos,
-      projectStarShip,
-    ])
-  ]);
+export const personalProjects = [
+  new ProjectGroup('Unreal Engine', [
+    projectMD,
+    projectNavMesh,
+    projectToonTanks,
+    projectWestestShowdown,
+    projectNimbleGiantChallenge,
+    projectEscape,
+  ]),
+  new ProjectGroup('Unity', [
+    projectRobophaser,
+    projectTimebot,
+    projectCyberwalk,
+    projectLupe,
+    projectOverjammed,
+    projectGloomhaven,
+    projectRetry,
+  ]),
+  new ProjectGroup('Godot', [
+    projectForgeMadness
+  ]),
+  new ProjectGroup('Other', [
+    projectAngryShips,
+    projectBookie,
+    projectSunbox,
+    projectGeorayos,
+    projectStarShip,
+  ])
+];

@@ -1,18 +1,6 @@
-import {Component, HostBinding, OnInit} from '@angular/core';
-import {projectAngryShips} from '../../models/projects/angry-ships';
-import {projectOverjammed} from '../../models/projects/overjammed';
-import {projectSunbox} from '../../models/projects/sunbox';
-import {Project} from '../../models/project';
-import {projectTimebot} from '../../models/projects/timebot';
-import {projectEscape} from '../../models/projects/escape';
-import {projectNimbleGiantChallenge} from '../../models/projects/nimble-giant-challenge';
-import {projectNawaiam} from '../../models/projects/nawaiam';
-import {projectGloomhaven} from '../../models/projects/gloomhaven';
-import {projectBookie} from '../../models/projects/bookie';
-import {projectStarShip} from '../../models/projects/starships';
-import {projectRetry} from '../../models/projects/retry';
-import {projectGeorayos} from '../../models/projects/georayos';
+import {Component, Input, OnInit} from '@angular/core';
 import {ProjectGroup} from '../../models/project-group';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-projects',
@@ -24,36 +12,16 @@ import {ProjectGroup} from '../../models/project-group';
 })
 export class ProjectsComponent implements OnInit {
 
-  public projects: Project[];
-  public searchInput = '';
-  public projectGroups: ProjectGroup[] = [];
+  @Input() projectGroups: ProjectGroup[];
 
-  constructor() {
+  public searchInput = '';
+
+  constructor(private route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.initializeProjects();
+    if (!this.projectGroups) {
+      this.projectGroups = this.route.snapshot.data['projectGroups'];
+    }
   }
-
-  projectGroupsChanged(projectGroups: ProjectGroup[]): void {
-    this.projectGroups = projectGroups;
-  }
-
-  private initializeProjects() {
-    this.projects = [
-      projectNawaiam,
-      projectTimebot,
-      projectOverjammed,
-      projectAngryShips,
-      projectGloomhaven,
-      projectRetry,
-      projectSunbox,
-      projectNimbleGiantChallenge,
-      projectEscape,
-      projectGeorayos,
-      projectBookie,
-      projectStarShip
-    ];
-  }
-
 }

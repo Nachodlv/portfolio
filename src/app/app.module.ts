@@ -23,8 +23,9 @@ import {CurriculumDropdownComponent} from './sections/about-me/curriculum-dropdo
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SearchProjectPipe} from './pipes/search-project.pipe';
 import {FormsModule} from '@angular/forms';
-import {ProjectGroupFilterComponent} from './sections/projects/project-group-filter/project-group-filter.component';
-import { CircularButtonComponent } from './sections/about-me/circular-button/circular-button.component';
+import {CircularButtonComponent} from './sections/about-me/circular-button/circular-button.component';
+import {TabsModule} from 'ngx-bootstrap/tabs';
+
 
 @NgModule({
   declarations: [
@@ -44,7 +45,6 @@ import { CircularButtonComponent } from './sections/about-me/circular-button/cir
     PdfModalComponent,
     CurriculumDropdownComponent,
     SearchProjectPipe,
-    ProjectGroupFilterComponent,
     CircularButtonComponent,
   ],
   imports: [
@@ -59,6 +59,7 @@ import { CircularButtonComponent } from './sections/about-me/circular-button/cir
     PdfViewerModule,
     NgxExtendedPdfViewerModule,
     FormsModule,
+    TabsModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

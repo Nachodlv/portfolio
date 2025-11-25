@@ -3,7 +3,6 @@
     <input type="text" class="form-control" id="searchInput" placeholder="Search project by title or technology"
            [(ngModel)]="searchInput">
   </div>
-  <app-project-group-filter (projectGroups)="projectGroupsChanged($event)"></app-project-group-filter>
   <div *ngFor="let projectGroup of projectGroups | searchProject: searchInput; let i = index">
     <h3 class="project-group-name">{{projectGroup.name}}</h3>
     <div class="row">
