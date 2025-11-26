@@ -19,6 +19,7 @@ import {projectRobophaser} from './projects/robophaser';
 import {projectForgeMadness} from './projects/forge-madness';
 import {projectNavMesh} from './projects/navmesh';
 import {projectMD} from './projects/motherdorito';
+import {projectStampede} from "./projects/stamp-ede";
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -38,6 +39,7 @@ export const personalProjects = [
     projectNavMesh,
 
     projectRobophaser,
+    projectStampede,
     projectCyberwalk,
     projectWestestShowdown,
     projectOverjammed,
