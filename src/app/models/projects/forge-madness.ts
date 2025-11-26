@@ -1,6 +1,6 @@
 ﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectForgeMadness = new Project(
   'forge-madness',
@@ -20,15 +20,18 @@ const projectForgeMadness = new Project(
     finishDate: new Date(2022, 0, 30),
     timeItTook: {years: 0, months: 0, weeks: 0, days: 3}
   },
-  undefined,
-  [
-    'Use the Godot engine',
-    'Implement WWise in Godot',
-    'Program in GodotScript',
-  ],
   [
     {name: 'Download Game', link: 'https://jarambarri.itch.io/forge-madness'},
     {name: 'Code', link: 'https://gitlab.com/nachodlv/ggj22'},
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Use the Godot engine',
+        'Implement WWise in Godot',
+        'Program in GodotScript',
+      ]
+    )
   ]);
 
 export {projectForgeMadness};

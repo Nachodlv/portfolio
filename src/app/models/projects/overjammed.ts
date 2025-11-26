@@ -1,6 +1,6 @@
 import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectOverjammed = new Project(
   'overjammed',
@@ -22,13 +22,18 @@ const projectOverjammed = new Project(
     finishDate: new Date(2020, 3, 20),
     timeItTook: {years: 0, months: 0, days: 3}
   },
-  undefined, [
-    'Learned how to prototype games fast and efficiently',
-    'Learned how to get assets, such as music and art, and integrated with Unity',
-  ], [
+  [
     {name: 'Game', link: 'https://nachodlv.itch.io/overjammed'},
     {name: 'Source code', link: 'https://github.com/Nachodlv/overjammed'},
     {name: 'Ludum Dare submission', link: 'https://ldjam.com/events/ludum-dare/46/overjammed'}
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Learned how to prototype games fast and efficiently',
+        'Learned how to get assets, such as music and art, and integrated with Unity',
+      ]
+    )
   ]);
 
 export {projectOverjammed};

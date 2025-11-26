@@ -1,6 +1,6 @@
 ﻿﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectEscape = new Project(
   'escape',
@@ -24,14 +24,19 @@ const projectEscape = new Project(
     startDate: new Date(2020, 2, 1),
     finishDate: new Date(2020, 2, 10),
     timeItTook: {years: 0, months: 0, weeks: 1, days: 4}
-  }, undefined,
+  },
   [
-    'Learned the basics of Unreal Engine and how to make a basic game with it.',
-    'Learned Unreal Engine conventions when coding.',
-    'Improved my C++ skills.',
-  ], [
     {name: 'Code', link: 'https://gitlab.com/nachodlv/building-escape'},
     {name: 'Course:', link: 'https://www.udemy.com/course/unrealcourse/'},
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Learned the basics of Unreal Engine and how to make a basic game with it.',
+        'Learned Unreal Engine conventions when coding.',
+        'Improved my C++ skills.',
+      ]
+    )
   ]);
 
 export {projectEscape};

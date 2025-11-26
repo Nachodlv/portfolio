@@ -3,12 +3,9 @@
     <input type="text" class="form-control" id="searchInput" placeholder="Search project by title or technology"
            [(ngModel)]="searchInput">
   </div>
-  <div *ngFor="let projectGroup of projectGroups | searchProject: searchInput; let i = index">
-    <h3 class="project-group-name">{{projectGroup.name}}</h3>
-    <div class="row">
-      <div *ngFor="let project of projectGroup.projects" class="project-content col-lg-4 col-md-6">
+  <div class="row">
+    <div *ngFor="let project of projects | searchProject: searchInput; let i = index" class="project-content col-lg-4 col-md-6">
         <app-project [project]="project"></app-project>
-      </div>
     </div>
   </div>
 </div>

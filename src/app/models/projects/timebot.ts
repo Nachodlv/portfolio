@@ -1,6 +1,6 @@
 ﻿﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectTimebot = new Project(
   'timebot',
@@ -22,14 +22,20 @@ const projectTimebot = new Project(
     finishDate: new Date(2020, 4, 31),
     timeItTook: {years: 0, months: 1,}
   },
-  undefined, [
-    'Load and unload scenes asynchronously in Unity in a fast and efficient way for the different levels.',
-    'Learned how use Unity\'s Tilemap for designing levels.',
-    'Learned how to use Unity\'s Trail renderer and 2D lights.'
-  ], [
+  [
     {name: 'Game', link: 'https://jarambarri.itch.io/timebot'},
     {name: 'Source code', link: 'https://github.com/Nachodlv/timebot'},
     {name: 'GameDev.tv submission', link: 'https://itch.io/jam/gamedevtv-community-jam/rate/658034'}
-  ]);
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Load and unload scenes asynchronously in Unity in a fast and efficient way for the different levels.',
+        'Learned how use Unity\'s Tilemap for designing levels.',
+        'Learned how to use Unity\'s Trail renderer and 2D lights.'
+      ]
+    )
+  ]
+  ,);
 
 export {projectTimebot};

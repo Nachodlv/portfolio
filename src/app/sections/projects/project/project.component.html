@@ -1,7 +1,7 @@
 <div id="project" (click)="openProjectDetails()">
   <div class="row mb-3">
-    <h3 class="col-auto title">{{project.title}}</h3>
-    <div class="technology-container row align-items-center ml-2 pr-2 pl-0 justify-content-center">
+    <h3 class="col title align-items-center">{{project.title}}</h3>
+    <div class="technology-container row align-items-center ml-2 pr-2 pl-0 justify-content-center col-auto">
       <div class="technology-icon pt-0" *ngFor="let technology of project.technologies">
         <app-technology [technology]="technology"></app-technology>
       </div>

@@ -1,6 +1,6 @@
 ﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectToonTanks = new Project(
   'toon-tanks',
@@ -23,11 +23,16 @@ const projectToonTanks = new Project(
     finishDate: new Date(2020, 10, 31),
     timeItTook: {years: 0, months: 1}
   },
-  undefined, [
-    'Improved my knowledge of multiplayer with Unreal',
-    'Learned basic AI behavior'
-  ], [
+  [
     {name: 'Source code', link: 'https://gitlab.com/nachodlv/toon-tanks'},
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Improved my knowledge of multiplayer with Unreal',
+        'Learned basic AI behavior'
+      ]
+    )
   ]);
 
 export {projectToonTanks};

@@ -1,6 +1,6 @@
 import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectStarShip = new Project(
   'starships',
@@ -20,13 +20,18 @@ const projectStarShip = new Project(
     startDate: new Date(2018, 6),
     finishDate: new Date(2018, 10),
     timeItTook: {years: 0, months: 5}
-  }, undefined,
+  },
   [
-    'Learned the design patterns in games.',
-    'Learned how to make a game that can escalate and be expanded easily.'
-  ], [
     {name: 'Class diagram: ', link: 'https://drive.google.com/file/d/1o6BkwRPYDFfsyh4OKJWGH0IJ-pAGmrsP/view?usp=sharing'},
     {name: 'Code', link: 'https://github.com/nachodlv/starships'}
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Learned the design patterns in games.',
+        'Learned how to make a game that can escalate and be expanded easily.'
+      ]
+    )
   ]);
 
 export {projectStarShip};

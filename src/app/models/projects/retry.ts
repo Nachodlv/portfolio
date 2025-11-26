@@ -1,6 +1,6 @@
 ﻿﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectRetry = new Project(
   'retry',
@@ -23,14 +23,19 @@ const projectRetry = new Project(
     startDate: new Date(2020, 1, 15),
     finishDate: new Date(2020, 1, 29),
     timeItTook: {years: 0, months: 0, weeks: 2}
-  }, undefined,
+  },
   [
-    'Learned how to use the Unity debugger and avoid the garbage collector by limiting the memory allocation during ' +
-    'the game.',
-    'Learned how to deploy a game in Google Play'
-  ], [
     {name: 'Try it on the browser: ', link: 'https://nachodlv.github.io/retry/'},
     {name: 'Code', link: 'https://github.com/nachodlv/retry'}
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Learned how to use the Unity debugger and avoid the garbage collector by limiting the memory allocation during ' +
+        'the game.',
+        'Learned how to deploy a game in Google Play'
+      ]
+    )
   ]);
 
 export {projectRetry};

@@ -1,6 +1,6 @@
 import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectGloomhaven = new Project(
   'gloomhaven',
@@ -23,13 +23,18 @@ const projectGloomhaven = new Project(
     startDate: new Date(2020, 0, 6),
     finishDate: new Date(2020, 0, 28),
     timeItTook: {years: 0, months: 0, weeks: 3}
-  }, undefined,
+  },
   [
-    'I learned how to make a turn base game',
-    'I learned how to deal with asynchronous events'
-  ], [
     {name: 'Play it on the browser: ', link: 'https://nachodlv.github.io/gloomhaven/'},
     {name: 'Code', link: 'https://github.com/nachodlv/gloomhaven'}
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'I learned how to make a turn base game',
+        'I learned how to deal with asynchronous events'
+      ]
+    )
   ]);
 
 export {projectGloomhaven};

@@ -21,8 +21,6 @@ const projectCyberwalk = new Project(
     finishDate: new Date(2021, 11, 4),
     timeItTook: {years: 0, months: 0, weeks: 0, days: 3}
   },
-  undefined,
-  undefined,
   [
     {name: 'Game', link: 'https://nachodlv.itch.io/cyberwalk-2049'},
     {name: 'Code', link: 'https://github.com/Nachodlv/Cyberwalk'},

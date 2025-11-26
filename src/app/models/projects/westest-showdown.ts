@@ -1,6 +1,6 @@
 ﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectWestestShowdown = new Project(
   'westest-showdown',
@@ -24,13 +24,18 @@ const projectWestestShowdown = new Project(
     startDate: new Date(2021, 3, 24),
     finishDate: new Date(2021, 3, 26),
     timeItTook: {years: 0, months: 0, weeks: 0, days: 3}
-  }, undefined,
+  },
   [
-    'Learn a lot of the GAS system in Unreal Engine',
-    'Learn how to prototype games fast in Unreal Engine'
-  ], [
     {name: 'Game', link: 'https://nachodlv.itch.io/westest-showdown'},
     {name: 'Code', link: 'https://gitlab.com/nachodlv/ld-48'},
-  ]);
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+    [
+      'Learn a lot of the GAS system in Unreal Engine',
+      'Learn how to prototype games fast in Unreal Engine'
+    ])
+  ]
+  );
 
 export {projectWestestShowdown};

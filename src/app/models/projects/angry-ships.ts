@@ -1,6 +1,6 @@
 ﻿﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectAngryShips = new Project(
   'angry-ships',
@@ -24,14 +24,19 @@ const projectAngryShips = new Project(
     startDate: new Date(2020, 4, 7),
     finishDate: new Date(2020, 5, 24),
     timeItTook: {years: 0, months: 1, weeks: 2, days: 3}
-  }, undefined,
-  [
-    'Learned how multiplayer games work and how to send data to a server via a websocket',
-    'Learned how to make a web page with heavy user interaction using Flutter',
-    'Leaned how to use Firebase for the login with Google'
-  ], [
+  }
+  , [
     {name: 'Game', link: 'http://angry-ships-remastered.ignaciodelavega.com/'},
     {name: 'Code', link: 'https://github.com/Nachodlv/angry-ships-remastered'},
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Learned how multiplayer games work and how to send data to a server via a websocket',
+        'Learned how to make a web page with heavy user interaction using Flutter',
+        'Leaned how to use Firebase for the login with Google'
+      ]
+    )
   ]);
 
 export {projectAngryShips};

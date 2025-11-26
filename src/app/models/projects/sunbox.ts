@@ -1,6 +1,6 @@
 import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectSunbox = new Project(
   'sunbox',
@@ -23,12 +23,17 @@ const projectSunbox = new Project(
     startDate: new Date(2017, 6),
     finishDate: new Date(2017, 10),
     timeItTook: {years: 0, months: 5}
-  }, undefined,
-  [
-    'I learned how to work in a small team and to program in Javascript and WebGL.'
-  ], [
+  }
+  , [
     {name: 'Try it on the browser: ', link: 'https://nachodlv.github.io/sunbox/'},
     {name: 'Code', link: 'https://github.com/nachodlv/sunbox'}
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'I learned how to work in a small team and to program in Javascript and WebGL.'
+      ]
+    )
   ]);
 
 export {projectSunbox};

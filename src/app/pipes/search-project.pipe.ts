@@ -14,20 +14,11 @@ export class SearchProjectPipe implements PipeTransform {
     );
   }
 
-  transform(projectGroups: ProjectGroup[], searchInput: string): ProjectGroup[] {
+  transform(projects: Project[], searchInput: string): Project[] {
     if (!searchInput) {
-      return projectGroups;
+      return projects;
     }
     const lowerCaseSearch = searchInput.toLowerCase();
-    return projectGroups
-      .filter(group =>
-        group.name.toLowerCase().includes(lowerCaseSearch) ||
-        SearchProjectPipe.searchProjects(group.projects, lowerCaseSearch).length > 0)
-      .map(group =>
-        new ProjectGroup(group.name,
-          group.name.toLowerCase().includes(lowerCaseSearch) ?
-            group.projects :
-            SearchProjectPipe.searchProjects(group.projects, lowerCaseSearch))
-      );
+    return SearchProjectPipe.searchProjects(projects, lowerCaseSearch);
   }
 }

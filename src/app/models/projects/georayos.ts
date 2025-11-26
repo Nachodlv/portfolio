@@ -1,6 +1,6 @@
 import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectGeorayos = new Project(
   'georayos',
@@ -23,12 +23,16 @@ const projectGeorayos = new Project(
     startDate: new Date(2019, 2),
     finishDate: new Date(2019, 11),
     timeItTook: {years: 0, months: 9}
-  }, undefined,
+  },
+  undefined,
   [
-    'Learned how to develop mobile applications with Flutter',
-    'Learned different patterns for state management in mobile applications',
-    'Learned how to get and use the location provided by the phone',
-    'Learned how to send and receive push notifications'
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Learned how to develop mobile applications with Flutter',
+        'Learned different patterns for state management in mobile applications',
+        'Learned how to get and use the location provided by the phone',
+        'Learned how to send and receive push notifications'
+      ])
   ]);
 
 export {projectGeorayos};

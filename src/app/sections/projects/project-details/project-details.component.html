@@ -8,30 +8,37 @@
   <div class="modal-body row">
     <div class="col-lg-6">
       <app-media-carousel [media]="project.media" class="col-lg-6"></app-media-carousel>
-      <div *ngIf="project.responsibilities" class="d-lg-inline d-none">
-        <h5>Responsibilities: </h5>
-        <ul>
-          <li *ngFor="let text of project.responsibilities">{{text}}</li>
-        </ul>
+      <div *ngFor="let details of project.extraDetails">
+        <div *ngIf="details.positioning == ProjectDetailsPositioning.Left" class="d-lg-inline d-none">
+          <h5>{{details.title}}</h5>
+          <ul>
+            <li *ngFor="let bulletPoint of details.bulletPoints">{{bulletPoint}}</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="col-lg-6 ">
       <h3>{{project.title}}</h3>
       <p *ngFor="let paragraph of project.description">{{paragraph}}</p>
-      <div *ngIf="project.responsibilities" class="d-lg-none d-inline">
-        <h5>Responsibilities: </h5>
-        <ul>
-          <li *ngFor="let text of project.responsibilities">{{text}}</li>
-        </ul>
-      </div>
-      <ng-container *ngIf="project.lessonsLearned">
-        <h5>What I learned:</h5>
-        <div class="col-auto technology-icon" *ngFor="let lesson of project.lessonsLearned">
+      <div *ngFor="let details of project.extraDetails">
+        <div *ngIf="details.positioning == ProjectDetailsPositioning.Left" class="d-lg-none d-inline">
+          <h5>{{details.title}}</h5>
           <ul>
-            <li>{{lesson}}</li>
+            <li *ngFor="let bulletPoint of details.bulletPoints">{{bulletPoint}}</li>
           </ul>
         </div>
-      </ng-container>
+      </div>
+
+      <div *ngFor="let details of project.extraDetails">
+        <ng-container *ngIf="details.positioning == ProjectDetailsPositioning.Right">
+          <h5>{{details.title}}</h5>
+          <div class="col-auto technology-icon">
+            <ul>
+              <li *ngFor="let bulletPoint of details.bulletPoints">{{bulletPoint}}</li>
+            </ul>
+          </div>
+        </ng-container>
+      </div>
       <div class="row">
         <h5 class="col-auto technologies-title">Technologies used:</h5>
         <div class="technology-container row align-items-center">

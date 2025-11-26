@@ -1,6 +1,6 @@
 ﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectNimbleGiantChallenge = new Project(
   'nimble-giant-challenge',
@@ -23,11 +23,16 @@ const projectNimbleGiantChallenge = new Project(
     finishDate: new Date(2020, 9, 12),
     timeItTook: {years: 0, months: 0, weeks: 2}
   },
-  undefined, [
-    'Learned how to build a multiplayer game in Unreal Engine',
-    'Learned how to manage the UI with C++'
-  ], [
+  [
     {name: 'Source code', link: 'https://gitlab.com/nachodlv/nimblegiant'},
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Learned how to build a multiplayer game in Unreal Engine',
+        'Learned how to manage the UI with C++'
+      ]
+    )
   ]);
 
 export {projectNimbleGiantChallenge};

@@ -1,6 +1,6 @@
 ﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectRobophaser = new Project(
   'robophaser',
@@ -25,17 +25,20 @@ const projectRobophaser = new Project(
     finishDate: new Date(2021, 0, 10),
     timeItTook: {years: 0, months: 8, weeks: 0, days: 0}
   },
-  undefined,
-  [
-    'Use augmented reality in Unity',
-    'Replicate augmented reality anchors (data) to multiple users',
-    'The procedural generation algorithm Wave Function Collapse',
-    'Make fast pace multiplayer games',
-    'Write documents using Latex'
-  ],
   [
     {name: 'Thesis (In spanish)', link: 'https://drive.google.com/file/d/15o5B3Il1ZMlf6qBtQkKkyX6ovAHNpZzB/view?usp=sharing'},
     {name: 'Code', link: 'https://github.com/Nachodlv/robophaser-thesis'},
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Use augmented reality in Unity',
+        'Replicate augmented reality anchors (data) to multiple users',
+        'The procedural generation algorithm Wave Function Collapse',
+        'Make fast pace multiplayer games',
+        'Write documents using Latex'
+      ]
+    )
   ]);
 
 export {projectRobophaser};

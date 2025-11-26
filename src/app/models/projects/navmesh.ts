@@ -1,6 +1,6 @@
 ﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectNavMesh = new Project(
   'navmesh',
@@ -22,12 +22,17 @@ const projectNavMesh = new Project(
   ], {
     startDate: new Date(2021, 12, 1)
   },
-  undefined, [
-    'My knowledge about navigation mesh before starting this project was zero, so I learned everything about it',
-    'How to make micro optimizations on high demand functions and big data',
-    'Multi thread in Unreal Engine',
-  ], [
+  [
     {name: 'Source code', link: 'https://github.com/Nachodlv/custom-navmesh'},
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'My knowledge about navigation mesh before starting this project was zero, so I learned everything about it',
+        'How to make micro optimizations on high demand functions and big data',
+        'Multi thread in Unreal Engine',
+      ]
+    )
   ]);
 
 export {projectNavMesh};

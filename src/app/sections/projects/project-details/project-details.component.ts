@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {BsModalRef} from 'ngx-bootstrap';
-import {Project} from '../../../models/project';
+import {Project, ProjectDetailsPositioning} from '../../../models/project';
 
 @Component({
   selector: 'app-project-details',
@@ -17,4 +17,6 @@ export class ProjectDetailsComponent {
   closeModal() {
     this.bsModalRef.hide();
   }
+
+  public readonly ProjectDetailsPositioning = ProjectDetailsPositioning;
 }

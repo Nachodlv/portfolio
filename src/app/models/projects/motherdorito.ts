@@ -1,6 +1,6 @@
 ﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectMD = new Project(
   'md',
@@ -24,10 +24,16 @@ const projectMD = new Project(
     finishDate: new Date(2022, 3, 1),
     timeItTook: {years: 1, months: 0},
   },
-  undefined, [
-    'How to load streaming levels in runtime in Unreal Engine',
-    'How to use the steam API to connect multiple users in one session',
-    'How to correctly work with UI in Unreal Engine'
-  ]);
+  undefined,
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'How to load streaming levels in runtime in Unreal Engine',
+        'How to use the steam API to connect multiple users in one session',
+        'How to correctly work with UI in Unreal Engine'
+      ]
+    )
+  ]
+);
 
 export {projectMD};

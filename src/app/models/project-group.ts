@@ -32,31 +32,29 @@ export const professionalProjects = [
 ];
 
 export const personalProjects = [
-  new ProjectGroup('Unreal Engine', [
+  new ProjectGroup('All', [
+
     projectMD,
     projectNavMesh,
-    projectToonTanks,
-    projectWestestShowdown,
-    projectNimbleGiantChallenge,
-    projectEscape,
-  ]),
-  new ProjectGroup('Unity', [
+
     projectRobophaser,
-    projectTimebot,
     projectCyberwalk,
-    projectLupe,
+    projectWestestShowdown,
     projectOverjammed,
+    projectLupe,
+    projectTimebot,
+    projectForgeMadness,
+
     projectGloomhaven,
-    projectRetry,
-  ]),
-  new ProjectGroup('Godot', [
-    projectForgeMadness
-  ]),
-  new ProjectGroup('Other', [
     projectAngryShips,
     projectBookie,
     projectSunbox,
     projectGeorayos,
+
+    // projectToonTanks,
+    // projectNimbleGiantChallenge,
+    // projectEscape,
+    projectRetry,
     projectStarShip,
   ])
 ];

@@ -1,6 +1,6 @@
 ﻿import {Technologies} from '../technologies';
 import {ProjectMedia, ProjectMediaType} from '../project-media';
-import {Project} from '../project';
+import {Project, ProjectDetails} from '../project';
 
 const projectLupe = new Project(
   'lupe',
@@ -22,13 +22,18 @@ const projectLupe = new Project(
     finishDate: new Date(2020, 9, 5),
     timeItTook: {years: 0, months: 0, days: 3}
   },
-  undefined, [
-    'Learned how to prototype challenging AIs',
-    'Learned how to manage a team',
-  ], [
+  [
     {name: 'Game', link: 'https://nachodlv.github.io/ludum-dare-47/'},
     {name: 'Source code', link: 'https://github.com/Nachodlv/ludum-dare-47'},
     {name: 'Ludum Dare submission', link: 'https://ldjam.com/events/ludum-dare/47/lupe'}
+  ],
+  [
+    ProjectDetails.ConstructLearningDetails(
+      [
+        'Learned how to prototype challenging AIs',
+        'Learned how to manage a team',
+      ]
+    )
   ]);
 
 export {projectLupe};
