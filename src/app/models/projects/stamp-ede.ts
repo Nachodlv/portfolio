@@ -18,7 +18,7 @@ const projectStampede = new Project(
     'You have four days to pay up and deal with your job and other eventualities that may come up',
     'Stamp-ede is a game made for the game jam Ludum Dare 53. It was made in the lapse of 5 days.'
   ], {
-    startDate: new Date(2021, 3, 28),
+    startDate: new Date(2023, 3, 28),
     finishDate: new Date(2023, 4, 2),
     timeItTook: {years: 0, months: 0, weeks: 0, days: 5}
   },
