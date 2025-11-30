@@ -16,8 +16,6 @@ export class AboutMeComponent implements OnInit {
 
   getGoogleDriveUrl = ProjectMedia.getGoogleDriveUrl;
 
-  curriculumUrl = 'assets/documents/curriculum/CurriculumEN.pdf';
-
   constructor() { }
 
   ngOnInit() {

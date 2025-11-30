@@ -27,7 +27,7 @@ const projectToonTanks = new Project(
     {name: 'Source code', link: 'https://gitlab.com/nachodlv/toon-tanks'},
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Improved my knowledge of multiplayer with Unreal',
         'Learned basic AI behavior'
