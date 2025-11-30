@@ -12,7 +12,26 @@
       .card-title {
         font-weight: bold;
       }
+      .card-body {
+        padding-top: 0;
+      }
+    }
+  }
+}
 
+::ng-deep {
+
+  .nav-tabs {
+    border-bottom: none;
+
+    .nav-link.active {
+      background-color: var(--secondary-background-color);
+      color: var(--primary-color);
+      border-color: transparent;
+    }
+
+    .nav-link {
+      color: var(--primary-color);
     }
   }
 }
