@@ -28,7 +28,7 @@ const projectTimebot = new Project(
     {name: 'GameDev.tv submission', link: 'https://itch.io/jam/gamedevtv-community-jam/rate/658034'}
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Load and unload scenes asynchronously in Unity in a fast and efficient way for the different levels.',
         'Learned how use Unity\'s Tilemap for designing levels.',

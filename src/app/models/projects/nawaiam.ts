@@ -43,16 +43,14 @@ const projectNawaiam = new Project(
     {name: 'LinkedIn', link: 'https://www.linkedin.com/company/nawaiam/'}
   ],
   [
-    new ProjectDetails(
-      'Responsibilities',
+    ProjectDetails.constructResponsibilitiesDetails(
       [
         'I developed this game with Unity and C# from scratch to finish.',
         'I worked with the Facebook API for Unity, with the OAuth of LinkedIn and with an external back-end that was connected to a database.',
         'I was in charge of making the code and put all assets together to make the animations. I worked in a team conformed by two more ' +
         'developers, an artist, a designer and a composer',
         'The web provided was also developed by me and another programmer.'
-      ],
-      ProjectDetailsPositioning.Left
+      ]
     )
   ],
   {ios: '', google: 'https://play.google.com/store/apps/details?id=com.Sirius.Nawaiam'});

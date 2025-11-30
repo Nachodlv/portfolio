@@ -26,7 +26,7 @@ const projectMD = new Project(
   },
   undefined,
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'How to load streaming levels in runtime in Unreal Engine',
         'How to use the steam API to connect multiple users in one session',

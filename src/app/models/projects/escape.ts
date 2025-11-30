@@ -30,7 +30,7 @@ const projectEscape = new Project(
     {name: 'Course:', link: 'https://www.udemy.com/course/unrealcourse/'},
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Learned the basics of Unreal Engine and how to make a basic game with it.',
         'Learned Unreal Engine conventions when coding.',

@@ -26,7 +26,7 @@ const projectStarShip = new Project(
     {name: 'Code', link: 'https://github.com/nachodlv/starships'}
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Learned the design patterns in games.',
         'Learned how to make a game that can escalate and be expanded easily.'

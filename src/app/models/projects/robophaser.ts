@@ -30,7 +30,7 @@ const projectRobophaser = new Project(
     {name: 'Code', link: 'https://github.com/Nachodlv/robophaser-thesis'},
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Use augmented reality in Unity',
         'Replicate augmented reality anchors (data) to multiple users',

@@ -26,7 +26,7 @@ const projectNavMesh = new Project(
     {name: 'Source code', link: 'https://github.com/Nachodlv/custom-navmesh'},
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'My knowledge about navigation mesh before starting this project was zero, so I learned everything about it',
         'How to make micro optimizations on high demand functions and big data',

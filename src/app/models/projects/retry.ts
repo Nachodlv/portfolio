@@ -29,7 +29,7 @@ const projectRetry = new Project(
     {name: 'Code', link: 'https://github.com/nachodlv/retry'}
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Learned how to use the Unity debugger and avoid the garbage collector by limiting the memory allocation during ' +
         'the game.',

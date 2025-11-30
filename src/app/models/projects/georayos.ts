@@ -26,7 +26,7 @@ const projectGeorayos = new Project(
   },
   undefined,
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Learned how to develop mobile applications with Flutter',
         'Learned different patterns for state management in mobile applications',

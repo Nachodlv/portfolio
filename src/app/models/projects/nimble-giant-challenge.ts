@@ -27,7 +27,7 @@ const projectNimbleGiantChallenge = new Project(
     {name: 'Source code', link: 'https://gitlab.com/nachodlv/nimblegiant'},
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Learned how to build a multiplayer game in Unreal Engine',
         'Learned how to manage the UI with C++'

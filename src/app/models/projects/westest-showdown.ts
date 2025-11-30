@@ -30,7 +30,7 @@ const projectWestestShowdown = new Project(
     {name: 'Code', link: 'https://gitlab.com/nachodlv/ld-48'},
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
     [
       'Learn a lot of the GAS system in Unreal Engine',
       'Learn how to prototype games fast in Unreal Engine'

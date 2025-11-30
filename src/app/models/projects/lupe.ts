@@ -28,7 +28,7 @@ const projectLupe = new Project(
     {name: 'Ludum Dare submission', link: 'https://ldjam.com/events/ludum-dare/47/lupe'}
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Learned how to prototype challenging AIs',
         'Learned how to manage a team',

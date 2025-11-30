@@ -8,7 +8,7 @@
                 allowfullscreen></iframe>
       </div>
       <div *ngSwitchCase="mediaType.IMAGE" class="image-container">
-        <img [src]="media.source" alt="Image not found" class="carousel-image">
+        <img [src]="media.source" alt="Image not found" class="carousel-image" [ngClass]="{'full-height': media.fullHeight}">
       </div>
       <div *ngSwitchCase="mediaType.PDF">
         <pdf-viewer [id]="i" [src]="media.source"

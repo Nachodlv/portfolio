@@ -13,8 +13,12 @@ export class ProjectDetails {
     public positioning: ProjectDetailsPositioning = ProjectDetailsPositioning.Right) {
   }
 
-  static ConstructLearningDetails(bulletPoints: string[]) : ProjectDetails {
+  static constructLearningDetails(bulletPoints: string[]) : ProjectDetails {
     return new ProjectDetails('What I Learned:', bulletPoints);
+  }
+
+  static constructResponsibilitiesDetails(bulletPoints: string[]) : ProjectDetails {
+    return new ProjectDetails('Responsibilities', bulletPoints, ProjectDetailsPositioning.Left);
   }
 }
 

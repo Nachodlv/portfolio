@@ -30,7 +30,7 @@ const projectAngryShips = new Project(
     {name: 'Code', link: 'https://github.com/Nachodlv/angry-ships-remastered'},
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Learned how multiplayer games work and how to send data to a server via a websocket',
         'Learned how to make a web page with heavy user interaction using Flutter',

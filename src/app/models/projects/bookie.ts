@@ -29,7 +29,7 @@ const projectBookie = new Project(
     {name: 'Code', link: 'https://github.com/nachodlv/bookie'}
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'I learned how to program in Kotlin and Android',
         'Learned how to use and manage the camera in Android',

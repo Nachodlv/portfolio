@@ -29,7 +29,7 @@ const projectSunbox = new Project(
     {name: 'Code', link: 'https://github.com/nachodlv/sunbox'}
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'I learned how to work in a small team and to program in Javascript and WebGL.'
       ]

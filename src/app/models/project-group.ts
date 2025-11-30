@@ -21,6 +21,7 @@ import {projectNavMesh} from './projects/navmesh';
 import {projectMD} from './projects/motherdorito';
 import {projectStampede} from "./projects/stamp-ede";
 import {projectAtScale} from "./projects/at-scale";
+import {projectD5} from "./projects/project-d5";
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -29,6 +30,7 @@ export class ProjectGroup {
 
 export const professionalProjects = [
   new ProjectGroup('Unity', [
+    projectD5,
     projectNawaiam,
   ]),
 ];

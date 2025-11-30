@@ -25,7 +25,7 @@ const projectForgeMadness = new Project(
     {name: 'Code', link: 'https://gitlab.com/nachodlv/ggj22'},
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Use the Godot engine',
         'Implement WWise in Godot',

@@ -29,7 +29,7 @@ const projectGloomhaven = new Project(
     {name: 'Code', link: 'https://github.com/nachodlv/gloomhaven'}
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'I learned how to make a turn base game',
         'I learned how to deal with asynchronous events'

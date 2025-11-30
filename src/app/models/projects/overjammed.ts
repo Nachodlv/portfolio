@@ -28,7 +28,7 @@ const projectOverjammed = new Project(
     {name: 'Ludum Dare submission', link: 'https://ldjam.com/events/ludum-dare/46/overjammed'}
   ],
   [
-    ProjectDetails.ConstructLearningDetails(
+    ProjectDetails.constructLearningDetails(
       [
         'Learned how to prototype games fast and efficiently',
         'Learned how to get assets, such as music and art, and integrated with Unity',
