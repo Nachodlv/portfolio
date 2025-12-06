@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectGeorayos = new Project(
   'georayos',
   'Georayos',
-  'assets/images/projects/georayos/georayos.png',
+  new ProjectMedia('assets/images/projects/georayos/georayos.png'),
   [Technologies.Flutter, Technologies.Java, Technologies.Spring, Technologies.PostgreSQL],
   [
     new ProjectMedia('/assets/images/projects/georayos/georayos.png', ProjectMediaType.IMAGE),

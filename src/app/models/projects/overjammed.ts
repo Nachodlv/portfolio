@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectOverjammed = new Project(
   'overjammed',
   'Overjammed',
-  'assets/images/projects/overjammed/overjammed.png',
+  new ProjectMedia('assets/images/projects/overjammed/overjammed.png'),
   [Technologies.Unity, Technologies.CSharp],
   [
     new ProjectMedia('/assets/images/projects/overjammed/overjammed2.png', ProjectMediaType.IMAGE),

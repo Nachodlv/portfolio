@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectNavMesh = new Project(
   'navmesh',
   'Custom Navigation Mesh',
-  ProjectMedia.getGoogleDriveUrl('1PD7q5vYqcSP9ne6w-IYOpxzgzrx6XNcw'),
+  new ProjectMedia(ProjectMedia.getGoogleDriveUrl('1PD7q5vYqcSP9ne6w-IYOpxzgzrx6XNcw')),
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
     new ProjectMedia('https://www.youtube.com/embed/tQc5QeUWZQ0', ProjectMediaType.VIDEO),

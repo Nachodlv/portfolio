@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectWestestShowdown = new Project(
   'westest-showdown',
   'Westest Showdown',
-  'assets/images/projects/westest-showdown/westest-showdown1.gif',
+  new ProjectMedia('assets/images/projects/westest-showdown/westest-showdown1.gif'),
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
     new ProjectMedia('/assets/images/projects/westest-showdown/westest-showdown2.png', ProjectMediaType.IMAGE),

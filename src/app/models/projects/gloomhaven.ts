@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectGloomhaven = new Project(
   'gloomhaven',
   'Gloomhaven',
-  'assets/images/projects/gloomhaven/gloomhaven2.png',
+  new ProjectMedia('assets/images/projects/gloomhaven/gloomhaven2.png'),
   [Technologies.Unity, Technologies.CSharp],
   [
     new ProjectMedia('https://www.youtube.com/embed/rvleMYstowo', ProjectMediaType.VIDEO),

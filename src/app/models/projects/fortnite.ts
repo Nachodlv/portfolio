@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectFortnite = new Project(
   'fortnite',
   'Fortnite Creative',
-  ProjectMedia.getGoogleDriveUrl('1E9xjlzcsqJoy1hPj8Ssv26AmEusOicrJ'),
+  new ProjectMedia(ProjectMedia.getGoogleDriveUrl('1E9xjlzcsqJoy1hPj8Ssv26AmEusOicrJ')),
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
     new ProjectMedia( ProjectMedia.getGoogleDriveUrl('1rXKEgEbRSXyAxdynBe0ekeI37KmVCXfq'), ProjectMediaType.IMAGE),

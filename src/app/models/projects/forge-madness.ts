@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectForgeMadness = new Project(
   'forge-madness',
   'Forge Madness',
-  'assets/images/projects/forge-madness/forge-madness-3.jpg',
+  new ProjectMedia('assets/images/projects/forge-madness/forge-madness-3.jpg'),
   [Technologies.Godot],
   [
     new ProjectMedia('https://www.youtube.com/embed/3Cun19-Mtbs', ProjectMediaType.VIDEO),

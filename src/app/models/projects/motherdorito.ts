@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectMD = new Project(
   'md',
   'MD',
-  ProjectMedia.getGoogleDriveUrl('1QvOrkzhatQYWj8DphbEjyi80fUy0qfBB'),
+  new ProjectMedia(ProjectMedia.getGoogleDriveUrl('1QvOrkzhatQYWj8DphbEjyi80fUy0qfBB')),
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
     new ProjectMedia(ProjectMedia.getYoutubeUrl('cFocxNbdvpA'), ProjectMediaType.VIDEO),

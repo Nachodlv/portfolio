@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectBookie = new Project(
   'bookie',
   'Bookie',
-  'assets/images/projects/bookie/bookie1.png',
+  new ProjectMedia('assets/images/projects/bookie/bookie1.png'),
   [Technologies.Android, Technologies.Kotlin, Technologies.Spring, Technologies.Mongo],
   [
     new ProjectMedia('/assets/images/projects/bookie/bookie1.png', ProjectMediaType.IMAGE),

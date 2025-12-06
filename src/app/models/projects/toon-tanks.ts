@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectToonTanks = new Project(
   'toon-tanks',
   'Toon Tanks',
-  'assets/images/projects/toon-tanks/toon-tanks1.gif',
+  new ProjectMedia('assets/images/projects/toon-tanks/toon-tanks1.gif'),
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
     new ProjectMedia('/assets/images/projects/toon-tanks/toon-tanks1.gif', ProjectMediaType.IMAGE),

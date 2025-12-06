@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectEscape = new Project(
   'escape',
   'Escape',
-  'assets/images/projects/escape/escape1.gif',
+  new ProjectMedia('assets/images/projects/escape/escape1.gif'),
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
     new ProjectMedia('/assets/images/projects/escape/escape1.gif', ProjectMediaType.IMAGE),

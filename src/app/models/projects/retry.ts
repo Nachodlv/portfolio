@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectRetry = new Project(
   'retry',
   'Retry',
-  'assets/images/projects/retry/retry1.jpeg',
+  new ProjectMedia('assets/images/projects/retry/retry1.jpeg'),
   [Technologies.Unity, Technologies.CSharp],
   [
     new ProjectMedia('https://www.youtube.com/embed/itrQ_GWM4c8', ProjectMediaType.VIDEO, 'Gameplay'),

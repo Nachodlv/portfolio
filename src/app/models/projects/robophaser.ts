@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectRobophaser = new Project(
   'robophaser',
   'RoboPhaser AR - Thesis',
-  'assets/images/projects/robophaser/robophaser-logo.png',
+  new ProjectMedia('assets/images/projects/robophaser/robophaser-logo.png'),
   [Technologies.Unity, Technologies.CSharp],
   [
     new ProjectMedia('https://www.youtube.com/embed/PLQuki4Ugbg', ProjectMediaType.VIDEO),

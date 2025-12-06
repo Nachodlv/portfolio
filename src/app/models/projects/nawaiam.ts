@@ -5,7 +5,7 @@ import {Project, ProjectDetails, ProjectDetailsPositioning} from '../project';
 const projectNawaiam = new Project(
   'nawaiam',
   'Nawaiam',
-  'assets/images/projects/nawaiam/nawaiam2.png',
+  new ProjectMedia('assets/images/projects/nawaiam/nawaiam2.png'),
   [Technologies.Unity, Technologies.CSharp, Technologies.Facebook],
   [
     new ProjectMedia('https://www.youtube.com/embed/KU-PuocS4kU?start=79', ProjectMediaType.VIDEO, 'Trailer'),

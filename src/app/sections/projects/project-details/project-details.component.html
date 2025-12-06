@@ -6,7 +6,7 @@
     </button>
   </div>
   <div class="modal-body row">
-    <div class="col-lg-6">
+    <div *ngIf="project.media.length > 0" class="col-lg-6">
       <app-media-carousel [media]="project.media" class="col-lg-6"></app-media-carousel>
       <div *ngFor="let details of project.extraDetails">
         <div *ngIf="details.positioning == ProjectDetailsPositioning.Left" class="d-lg-inline d-none">
@@ -17,11 +17,11 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-6 ">
+    <div [ngClass]="project.media.length > 0 ? 'col-lg-6' : 'col' ">
       <h3>{{project.title}}</h3>
       <p *ngFor="let paragraph of project.description">{{paragraph}}</p>
       <div *ngFor="let details of project.extraDetails">
-        <div *ngIf="details.positioning == ProjectDetailsPositioning.Left" class="d-lg-none d-inline">
+        <div *ngIf="details.positioning == ProjectDetailsPositioning.Left" class="d-inline" [ngClass]="{'d-lg-none': project.media.length > 0}">
           <h5>{{details.title}}</h5>
           <ul>
             <li *ngFor="let bulletPoint of details.bulletPoints">{{bulletPoint}}</li>

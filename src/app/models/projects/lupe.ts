@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectLupe = new Project(
   'lupe',
   'Lupe',
-  'assets/images/projects/lupe/lupe1.png',
+  new ProjectMedia('assets/images/projects/lupe/lupe1.png'),
   [Technologies.Unity, Technologies.CSharp],
   [
     new ProjectMedia('/assets/images/projects/lupe/lupe2.gif', ProjectMediaType.IMAGE),

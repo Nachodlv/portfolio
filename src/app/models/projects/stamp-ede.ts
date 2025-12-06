@@ -5,7 +5,7 @@ import {Project} from '../project';
 const projectStampede = new Project(
   'stamp-ede',
   'Stamp-ede',
-  'https://img.itch.zone/aW1nLzEyMDQ0NjUzLmdpZg==/original/XEWO%2Bc.gif',
+  new ProjectMedia('https://img.itch.zone/aW1nLzEyMDQ0NjUzLmdpZg==/original/XEWO%2Bc.gif'),
   [Technologies.Godot],
   [
     new ProjectMedia('https://img.itch.zone/aW1nLzEyMDQ0NjUzLmdpZg==/original/XEWO%2Bc.gif', ProjectMediaType.IMAGE),

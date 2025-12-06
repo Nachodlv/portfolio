@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectTimebot = new Project(
   'timebot',
   'Timebot',
-  'assets/images/projects/timebot/timebot.jpeg',
+  new ProjectMedia('assets/images/projects/timebot/timebot.jpeg'),
   [Technologies.Unity, Technologies.CSharp],
   [
     new ProjectMedia('/assets/images/projects/timebot/timebot.jpeg', ProjectMediaType.IMAGE, undefined, 'Title screen'),

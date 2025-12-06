@@ -7,5 +7,10 @@
       </div>
     </div>
   </div>
-  <div class="project-image-container"><img [src]="project.image" alt="Image not found" class="project-image"></div>
+  <div class="project-image-container align-content-center">
+    <img *ngIf="project.image.type == mediaType.IMAGE" [src]="project.image.source" alt="Image not found" class="project-image">
+    <h1 *ngIf="project.image.type == mediaType.TEXT">
+      {{project.image.title}}
+    </h1>
+  </div>
 </div>

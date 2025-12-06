@@ -5,7 +5,7 @@ import {Project, ProjectDetails, ProjectDetailsPositioning} from '../project';
 const projectD5 = new Project(
   'project-d5',
   'Project D5',
-  ProjectMedia.getGoogleDriveUrl('1ZakASkXGXqDBeEAmFDdi9_6eM-nuPkOC', 500),
+  new ProjectMedia(ProjectMedia.getGoogleDriveUrl('1ZakASkXGXqDBeEAmFDdi9_6eM-nuPkOC')),
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
     new ProjectMedia( ProjectMedia.getGoogleDriveUrl('1xJd6xqcwgbnnl9yVA5VklFkOU-IrXlbT'), ProjectMediaType.IMAGE).setFullHeight(false),

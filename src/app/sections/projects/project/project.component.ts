@@ -5,6 +5,7 @@ import {Project} from '../../../models/project';
 import {ActivatedRoute} from '@angular/router';
 import {Location} from '@angular/common';
 import {Subscription} from "rxjs";
+import {ProjectMediaType} from "../../../models/project-media";
 
 @Component({
   selector: 'app-project',
@@ -19,6 +20,7 @@ export class ProjectComponent implements OnInit, OnDestroy {
   urlSubscription: Subscription;
   paramsSubscription: Subscription;
   url: string;
+  public mediaType = ProjectMediaType;
 
   constructor(private modalService: BsModalService, private route: ActivatedRoute, private location: Location) {
   }

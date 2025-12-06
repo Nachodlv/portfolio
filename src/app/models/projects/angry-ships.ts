@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectAngryShips = new Project(
   'angry-ships',
   'Angry Ships',
-  'assets/images/projects/angry-ships/angry-ships.png',
+  new ProjectMedia('assets/images/projects/angry-ships/angry-ships.png'),
   [Technologies.Flutter, Technologies.Node, Technologies.Firebase],
   [
     new ProjectMedia('/assets/images/projects/angry-ships/angry-ships6.png', ProjectMediaType.IMAGE),

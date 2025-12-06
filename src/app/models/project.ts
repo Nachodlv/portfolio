@@ -26,7 +26,7 @@ export class Project {
   constructor(
     public id: string,
     public title: string,
-    public image: string,
+    public image: ProjectMedia,
     public technologies: Technology[],
     public media: ProjectMedia[],
     public description: string[],

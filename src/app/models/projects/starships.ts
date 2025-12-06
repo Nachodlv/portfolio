@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectStarShip = new Project(
   'starships',
   'Starships',
-  'assets/images/projects/starships/starship2.png',
+  new ProjectMedia('assets/images/projects/starships/starship2.png'),
   [Technologies.Java],
   [
     new ProjectMedia('/assets/images/projects/starships/class-model.pdf', ProjectMediaType.PDF, 'Class model'),

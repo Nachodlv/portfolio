@@ -55,6 +55,15 @@
       transition: opacity .5s;
       pointer-events: none;
     }
+
+    .text-container {
+      height: 300px;
+      padding: .5rem;
+      h1 {
+        text-align: center;
+      }
+    }
+
   }
 }
 

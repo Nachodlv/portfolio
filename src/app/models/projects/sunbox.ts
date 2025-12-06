@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectSunbox = new Project(
   'sunbox',
   'Sunbox',
-  'assets/images/projects/sunbox/sunbox5.png',
+  new ProjectMedia('assets/images/projects/sunbox/sunbox5.png'),
   [Technologies.JavaScript, Technologies.HTML, Technologies.WebGL],
   [
     new ProjectMedia('/assets/images/projects/sunbox/sunbox1.png', ProjectMediaType.IMAGE),

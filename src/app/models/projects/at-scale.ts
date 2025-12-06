@@ -5,7 +5,7 @@ import {Project} from '../project';
 const projectAtScale = new Project(
   'at-scale',
   'At Scale',
-  'https://img.itch.zone/aW1nLzE3NDQ4MTI1LnBuZw==/original/06RCog.png',
+  new ProjectMedia('https://img.itch.zone/aW1nLzE3NDQ4MTI1LnBuZw==/original/06RCog.png'),
   [Technologies.Godot],
   [
     new ProjectMedia('https://img.itch.zone/aW1nLzE3NDQ4MTI1LnBuZw==/original/06RCog.png', ProjectMediaType.IMAGE),

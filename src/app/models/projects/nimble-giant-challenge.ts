@@ -5,7 +5,7 @@ import {Project, ProjectDetails} from '../project';
 const projectNimbleGiantChallenge = new Project(
   'nimble-giant-challenge',
   'NGD Challenge',
-  '/assets/images/projects/nimble-giant-challenge/nimble-giant-challenge1.gif',
+  new ProjectMedia('/assets/images/projects/nimble-giant-challenge/nimble-giant-challenge1.gif'),
   [Technologies.UnrealEngine, Technologies.Cpp],
   [
     new ProjectMedia('/assets/images/projects/nimble-giant-challenge/nimble-giant-challenge1.gif', ProjectMediaType.IMAGE),

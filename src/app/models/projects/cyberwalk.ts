@@ -5,7 +5,7 @@ import {Project} from '../project';
 const projectCyberwalk = new Project(
   'cyberwalk',
   'Cyberwalk 2049',
-  'assets/images/projects/cyberwalk/cyberwalk.gif',
+  new ProjectMedia('assets/images/projects/cyberwalk/cyberwalk.gif'),
   [Technologies.Unity, Technologies.CSharp],
   [
     new ProjectMedia('assets/images/projects/cyberwalk/cyberwalk2.jpg', ProjectMediaType.IMAGE),

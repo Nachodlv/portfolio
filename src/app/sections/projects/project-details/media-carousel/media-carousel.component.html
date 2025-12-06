@@ -20,7 +20,10 @@
           <h3>Click to expand!</h3>
         </div>
       </div>
-      <div *ngIf="media.type !== mediaType.PDF" class="carousel-caption d-none d-md-block">
+      <div *ngSwitchCase="mediaType.TEXT" class="text-container align-content-center">
+        <h1>{{media.title}}</h1>
+      </div>
+      <div *ngIf="media.type !== mediaType.PDF && media.type !== mediaType.TEXT" class="carousel-caption d-none d-md-block">
         <h3>{{media.title}}</h3>
         <p>{{media.description}}</p>
       </div>
