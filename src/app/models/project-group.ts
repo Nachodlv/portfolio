@@ -23,6 +23,7 @@ import {projectStampede} from "./projects/stamp-ede";
 import {projectAtScale} from "./projects/at-scale";
 import {projectD5} from "./projects/project-d5";
 import {projectFortnite} from "./projects/fortnite";
+import {projectExtractionShooter} from "./projects/extraction-shooter";
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -33,6 +34,7 @@ export const professionalProjects = [
   new ProjectGroup('All', [
     projectD5,
     projectFortnite,
+    projectExtractionShooter,
     projectNawaiam,
   ]),
 ];
