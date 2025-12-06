@@ -22,6 +22,7 @@ import {projectMD} from './projects/motherdorito';
 import {projectStampede} from "./projects/stamp-ede";
 import {projectAtScale} from "./projects/at-scale";
 import {projectD5} from "./projects/project-d5";
+import {projectFortnite} from "./projects/fortnite";
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -29,8 +30,9 @@ export class ProjectGroup {
 }
 
 export const professionalProjects = [
-  new ProjectGroup('Unity', [
+  new ProjectGroup('All', [
     projectD5,
+    projectFortnite,
     projectNawaiam,
   ]),
 ];
