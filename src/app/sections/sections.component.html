@@ -8,10 +8,9 @@
 
 <div class="px-3">
   <tabset #tabs>
-    <tab heading="Personal Projects" id="tab1" (selectTab)="onSelect($event, 0)">
-    </tab>
-    <tab heading="Professional Projects" (selectTab)="onSelect($event, 1)">
-    </tab>
+    <tab heading="Professional Projects" (selectTab)="onSelect($event, 0)"></tab>
+    <tab heading="Personal Projects" id="tab1" (selectTab)="onSelect($event, 1)"></tab>
+    <tab heading="All Projects" (selectTab)="onSelect($event, 2)"></tab>
   </tabset>
 </div>
 

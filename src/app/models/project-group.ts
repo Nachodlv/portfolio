@@ -30,41 +30,49 @@ export class ProjectGroup {
   }
 }
 
-export const professionalProjects = [
-  new ProjectGroup('All', [
-    projectD5,
-    projectFortnite,
-    projectExtractionShooter,
-    projectNawaiam,
-  ]),
+const professionalProjects = new ProjectGroup('All', [
+  projectD5,
+  projectFortnite,
+  projectExtractionShooter,
+  projectNawaiam,
+]);
+
+const personalProjects = new ProjectGroup('All', [
+  projectMD,
+  projectNavMesh,
+
+  projectRobophaser,
+  projectAtScale,
+  projectStampede,
+  projectCyberwalk,
+  projectWestestShowdown,
+  projectOverjammed,
+  projectLupe,
+  projectTimebot,
+  projectForgeMadness,
+
+  projectGloomhaven,
+  projectAngryShips,
+  projectBookie,
+  projectSunbox,
+  projectGeorayos,
+
+  // projectToonTanks,
+  // projectNimbleGiantChallenge,
+  // projectEscape,
+  projectRetry,
+  projectStarShip,
+]);
+
+export const professionalGroup = [
+  professionalProjects,
 ];
 
-export const personalProjects = [
-  new ProjectGroup('All', [
+export const personalGroup = [
+  personalProjects,
+];
 
-    projectMD,
-    projectNavMesh,
-
-    projectRobophaser,
-    projectAtScale,
-    projectStampede,
-    projectCyberwalk,
-    projectWestestShowdown,
-    projectOverjammed,
-    projectLupe,
-    projectTimebot,
-    projectForgeMadness,
-
-    projectGloomhaven,
-    projectAngryShips,
-    projectBookie,
-    projectSunbox,
-    projectGeorayos,
-
-    // projectToonTanks,
-    // projectNimbleGiantChallenge,
-    // projectEscape,
-    projectRetry,
-    projectStarShip,
-  ])
+export const allProjects = [
+  professionalProjects,
+  personalProjects,
 ];

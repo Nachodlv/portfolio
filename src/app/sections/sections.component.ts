@@ -14,8 +14,9 @@ export class SectionsComponent implements OnInit, OnDestroy {
   @ViewChild('tabs', { static: false }) tabsComponent?: TabsetComponent;
 
   private tabsUrl = [
+    'professional-projects',
     'personal-projects',
-    'professional-projects'
+    'all-projects',
   ];
 
   private routerSubscription?: Subscription;
