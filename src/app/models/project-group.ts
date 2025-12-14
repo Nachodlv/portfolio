@@ -24,20 +24,21 @@ import {projectAtScale} from "./projects/at-scale";
 import {projectD5} from "./projects/project-d5";
 import {projectFortnite} from "./projects/fortnite";
 import {projectExtractionShooter} from "./projects/extraction-shooter";
+import {talkEva2023} from "./projects/talks/eva-2023";
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
   }
 }
 
-const professionalProjects = new ProjectGroup('All', [
+const professionalProjects = new ProjectGroup('Professional Projects', [
   projectD5,
   projectFortnite,
   projectExtractionShooter,
   projectNawaiam,
 ]);
 
-const personalProjects = new ProjectGroup('All', [
+const personalProjects = new ProjectGroup('Personal Projects', [
   projectMD,
   projectNavMesh,
 
@@ -64,6 +65,10 @@ const personalProjects = new ProjectGroup('All', [
   projectStarShip,
 ]);
 
+const talks = new ProjectGroup('talks', [
+  talkEva2023
+]);
+
 export const professionalGroup = [
   professionalProjects,
 ];
@@ -72,7 +77,12 @@ export const personalGroup = [
   personalProjects,
 ];
 
+export const talksGroup = [
+  talks,
+];
+
 export const allProjects = [
   professionalProjects,
+  talks,
   personalProjects,
 ];
