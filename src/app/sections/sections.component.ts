@@ -15,6 +15,7 @@ export class SectionsComponent implements OnInit, OnDestroy {
 
   private tabsUrl = [
     'professional-projects',
+    'talks',
     'personal-projects',
     'all-projects',
   ];

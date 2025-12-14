@@ -39,7 +39,7 @@
           </div>
         </ng-container>
       </div>
-      <div class="row">
+      <div *ngIf="project.technologies?.length > 0" class="row">
         <h5 class="col-auto technologies-title">Technologies used:</h5>
         <div class="technology-container row align-items-center">
           <div class="technology-icon" *ngFor="let technology of project.technologies">
@@ -47,9 +47,12 @@
           </div>
         </div>
       </div>
-      <div>
+      <div *ngIf="project.time.finishDate || !project.finished">
         <h6>Duration: {{project.time.startDate | date: "dd/MM/yyyy"}}
-          - {{project.time.finishDate | date: "dd/MM/yyyy" | customDate}} {{project.time.timeItTook | duration}}</h6>
+          - {{project.time.finishDate ? (project.time.finishDate | date: "dd/MM/yyyy") : "present"}} {{project.time.timeItTook | duration}}</h6>
+      </div>
+      <div *ngIf="!project.time.finishDate">
+        <h6>Date: {{project.time.startDate | date: "dd/MM/yyyy"}}</h6>
       </div>
       <ng-container *ngIf="project.links && project.links.length > 0">
         <h5>Links:</h5>

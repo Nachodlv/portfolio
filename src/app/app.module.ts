@@ -14,7 +14,6 @@ import {ProjectComponent} from './sections/projects/project/project.component';
 import {TechnologyComponent} from './sections/projects/technology/technology.component';
 import {ProjectDetailsComponent} from './sections/projects/project-details/project-details.component';
 import {DurationPipe} from './pipes/duration-pipe';
-import {CustomDatePipe} from './pipes/custom-date-pipe';
 import {MediaCarouselComponent} from './sections/projects/project-details/media-carousel/media-carousel.component';
 import {PdfViewerModule} from 'ng2-pdf-viewer';
 import {NgxExtendedPdfViewerModule} from 'ngx-extended-pdf-viewer';
@@ -40,7 +39,6 @@ import {TabsModule} from 'ngx-bootstrap/tabs';
     TechnologyComponent,
     ProjectDetailsComponent,
     DurationPipe,
-    CustomDatePipe,
     MediaCarouselComponent,
     PdfModalComponent,
     CurriculumDropdownComponent,

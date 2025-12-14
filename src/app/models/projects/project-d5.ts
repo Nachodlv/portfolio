@@ -30,6 +30,6 @@ const projectD5 = new Project(
         'I\'m currently developing the bots that simulate players.'
       ]
     )
-  ]);
+  ]).setFinished(false);
 
 export {projectD5};

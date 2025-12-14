@@ -22,7 +22,19 @@ export class ProjectDetails {
   }
 }
 
+export class ProjectTime {
+
+  constructor(
+    public startDate: Date,
+    public finishDate?: Date,
+    public timeItTook?: TimeTaken,
+  ) {
+  }
+}
+
 export class Project {
+  public finished: boolean = true;
+
   constructor(
     public id: string,
     public title: string,
@@ -30,11 +42,17 @@ export class Project {
     public technologies: Technology[],
     public media: ProjectMedia[],
     public description: string[],
-    public time: { startDate: Date, finishDate?: Date, timeItTook?: TimeTaken },
+    public time: ProjectTime,
     public links?: { name: string, link: string }[],
     public extraDetails?: ProjectDetails[],
     public store?: { ios: string, google: string },
     ) {
+  }
+
+  setFinished(finished: boolean) : Project {
+    let newProject: Project = {... this};
+    newProject.finished = finished;
+    return newProject;
   }
 }
 
