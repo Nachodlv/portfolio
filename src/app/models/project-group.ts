@@ -26,6 +26,7 @@ import {projectFortnite} from "./projects/fortnite";
 import {projectExtractionShooter} from "./projects/extraction-shooter";
 import {talkEva2023} from "./projects/talks/eva-2023";
 import {imageCampus2023} from "./projects/talks/image-campus-2023";
+import {sdcExtra2025} from "./projects/talks/sdc-extra-2025";
 
 export class ProjectGroup {
   constructor(public name: string, public projects: Project[]) {
@@ -67,6 +68,7 @@ const personalProjects = new ProjectGroup('Personal Projects', [
 ]);
 
 const talks = new ProjectGroup('talks', [
+  sdcExtra2025,
   talkEva2023,
   imageCampus2023,
 ]);
